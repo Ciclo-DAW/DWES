@@ -1,0 +1,25 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    @{
+        var baraja = (string[])ViewData["baraja"];
+    }
+    <table>
+        @{
+            var sum = 0;
+            for (int i = 0; i < 4; i++)
+            {
+                <tr>
+                @for (int j = 0; j < 10; j++)
+                {
+                    <td><img src="~/images/cartas/@(baraja[j+sum]).png" alt="" /></td>
+                }
+                </tr>
+                sum += 10;
+            }
+        }
+    </table>
+</body>
+</html>
