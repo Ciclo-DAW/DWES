@@ -7,25 +7,6 @@ public class Baraja
 
     public Baraja()
     {
-
-        //for (int i = 0; i < 10; i++)
-        //{
-        //    Cartas[i] = new Carta(Palos[0], i+1);
-        //}
-        //for (int i = 10; i < 20; i++)
-        //{
-        //    Cartas[i] = new Carta(Palos[1], i-9);
-        //}
-        //for (int i = 20; i < 30; i++)
-        //{
-        //    Cartas[i] = new Carta(Palos[2], i-19);
-        //}
-        //for (int i = 30; i < 40; i++)
-        //{
-        //    Cartas[i] = new Carta(Palos[3], i-29);
-        //}
-
-        //Refactorizado
         int sum = 0;
         foreach (var item in Palos)
         {
