@@ -4,7 +4,9 @@
 </head>
 <body>
     @{
-        var baraja = (string[])ViewData["baraja"];
+        //var baraja = (string[])ViewData["baraja"];
+
+        Carta[] baraja = ViewData["baraja"] as Carta[];
     }
     <table>
         @{
@@ -14,7 +16,7 @@
                 <tr>
                 @for (int j = 0; j < 10; j++)
                 {
-                    <td><img src="~/images/cartas/@(baraja[j+sum]).png" alt="" /></td>
+                    <td><img src="~/images/cartas/@(baraja[j+sum].palo)-@(baraja[j+sum].numero).png" alt="" /></td>
                 }
                 </tr>
                 sum += 10;

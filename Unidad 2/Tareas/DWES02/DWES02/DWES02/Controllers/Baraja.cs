@@ -1,18 +1,18 @@
 ﻿using System;
 public class Baraja
 {
-    public Carta[] Cartas = new Carta[40];
+    public Carta[] cartas = new Carta[40];
 
-    public string[] Palos = { "bastos", "oros", "copas", "espadas" };
+    public string[] palos = { "bastos", "oros", "copas", "espadas" };
 
     public Baraja()
     {
         int sum = 0;
-        foreach (var item in Palos)
+        foreach (var item in palos)
         {
             for (int i = 0; i < 10; i++)
             {
-                Cartas[i+sum] = new Carta(item, i + 1);
+                cartas[i+sum] = new Carta(item, i + 1);
             }
             sum += 10;
         }
@@ -21,12 +21,12 @@ public class Baraja
     public void Barajar()
     {
         Random random = new Random();
-        for (int t = 0; t < Cartas.Length; t++)
+        for (int t = 0; t < cartas.Length; t++)
         {
-            Carta tmp = Cartas[t];
+            Carta tmp = cartas[t];
             int r = random.Next(0, 39);
-            Cartas[t] = Cartas[r];
-            Cartas[r] = tmp;
+            cartas[t] = cartas[r];
+            cartas[r] = tmp;
         }
     }
 }

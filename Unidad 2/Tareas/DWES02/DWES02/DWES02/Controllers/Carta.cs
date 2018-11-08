@@ -1,12 +1,12 @@
 ﻿using System;
 public class Carta
 {
-    public string Palo;
-    public int Numero;
+    public string palo;
+    public int numero;
 
-    public Carta(string palo, int numero)
+    public Carta(string p, int n)
     {
-        Palo = palo;
-        Numero = numero;
+        palo = p;
+        numero = n;
     }
 }
