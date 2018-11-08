@@ -11506,11 +11506,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documentos\\FP\\DWES\\Oficiales\\Unidad 2\\Tarea 1\\Proyecto\\Proyecto\\Proyecto.csproj",
+      "projectUniqueName": "D:\\Documentos\\FP\\DWES\\Unidad 2\\Ejercicios\\UD2.1\\Proyecto\\Proyecto\\Proyecto.csproj",
       "projectName": "Proyecto",
-      "projectPath": "D:\\Documentos\\FP\\DWES\\Oficiales\\Unidad 2\\Tarea 1\\Proyecto\\Proyecto\\Proyecto.csproj",
+      "projectPath": "D:\\Documentos\\FP\\DWES\\Unidad 2\\Ejercicios\\UD2.1\\Proyecto\\Proyecto\\Proyecto.csproj",
       "packagesPath": "C:\\Users\\Brais\\.nuget\\packages\\",
-      "outputPath": "D:\\Documentos\\FP\\DWES\\Oficiales\\Unidad 2\\Tarea 1\\Proyecto\\Proyecto\\obj\\",
+      "outputPath": "D:\\Documentos\\FP\\DWES\\Unidad 2\\Ejercicios\\UD2.1\\Proyecto\\Proyecto\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

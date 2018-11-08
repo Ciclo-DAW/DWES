@@ -23,3 +23,28 @@ D:\Documentos\FP\DWES\Oficiales\Tareas\Orientaciones_UD2\Proyecto\Proyecto\obj\D
 D:\Documentos\FP\DWES\Oficiales\Tareas\Orientaciones_UD2\Proyecto\Proyecto\obj\Debug\netcoreapp2.1\Proyecto.dll
 D:\Documentos\FP\DWES\Oficiales\Tareas\Orientaciones_UD2\Proyecto\Proyecto\obj\Debug\netcoreapp2.1\Proyecto.pdb
 D:\Documentos\FP\DWES\Oficiales\Tareas\Orientaciones_UD2\Proyecto\Proyecto\obj\Debug\netcoreapp2.1\Proyecto.csproj.CopyComplete
+D:\Documentos\FP\DWES\Unidad 2\Ejercicios\UD2.1\Proyecto\Proyecto\bin\Debug\netcoreapp2.1\Proyecto.deps.json
+D:\Documentos\FP\DWES\Unidad 2\Ejercicios\UD2.1\Proyecto\Proyecto\bin\Debug\netcoreapp2.1\Proyecto.runtimeconfig.json
+D:\Documentos\FP\DWES\Unidad 2\Ejercicios\UD2.1\Proyecto\Proyecto\bin\Debug\netcoreapp2.1\Proyecto.runtimeconfig.dev.json
+D:\Documentos\FP\DWES\Unidad 2\Ejercicios\UD2.1\Proyecto\Proyecto\bin\Debug\netcoreapp2.1\Proyecto.dll
+D:\Documentos\FP\DWES\Unidad 2\Ejercicios\UD2.1\Proyecto\Proyecto\bin\Debug\netcoreapp2.1\Proyecto.pdb
+D:\Documentos\FP\DWES\Unidad 2\Ejercicios\UD2.1\Proyecto\Proyecto\bin\Debug\netcoreapp2.1\Proyecto.Views.dll
+D:\Documentos\FP\DWES\Unidad 2\Ejercicios\UD2.1\Proyecto\Proyecto\bin\Debug\netcoreapp2.1\Proyecto.Views.pdb
+D:\Documentos\FP\DWES\Unidad 2\Ejercicios\UD2.1\Proyecto\Proyecto\obj\Debug\netcoreapp2.1\Proyecto.csprojAssemblyReference.cache
+D:\Documentos\FP\DWES\Unidad 2\Ejercicios\UD2.1\Proyecto\Proyecto\obj\Debug\netcoreapp2.1\Proyecto.csproj.CoreCompileInputs.cache
+D:\Documentos\FP\DWES\Unidad 2\Ejercicios\UD2.1\Proyecto\Proyecto\obj\Debug\netcoreapp2.1\Proyecto.RazorAssemblyInfo.cache
+D:\Documentos\FP\DWES\Unidad 2\Ejercicios\UD2.1\Proyecto\Proyecto\obj\Debug\netcoreapp2.1\Proyecto.RazorAssemblyInfo.cs
+D:\Documentos\FP\DWES\Unidad 2\Ejercicios\UD2.1\Proyecto\Proyecto\obj\Debug\netcoreapp2.1\Proyecto.AssemblyInfoInputs.cache
+D:\Documentos\FP\DWES\Unidad 2\Ejercicios\UD2.1\Proyecto\Proyecto\obj\Debug\netcoreapp2.1\Proyecto.AssemblyInfo.cs
+D:\Documentos\FP\DWES\Unidad 2\Ejercicios\UD2.1\Proyecto\Proyecto\obj\Debug\netcoreapp2.1\Proyecto.TagHelpers.input.cache
+D:\Documentos\FP\DWES\Unidad 2\Ejercicios\UD2.1\Proyecto\Proyecto\obj\Debug\netcoreapp2.1\Proyecto.TagHelpers.output.cache
+D:\Documentos\FP\DWES\Unidad 2\Ejercicios\UD2.1\Proyecto\Proyecto\obj\Debug\netcoreapp2.1\Proyecto.RazorCoreGenerate.cache
+D:\Documentos\FP\DWES\Unidad 2\Ejercicios\UD2.1\Proyecto\Proyecto\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+D:\Documentos\FP\DWES\Unidad 2\Ejercicios\UD2.1\Proyecto\Proyecto\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+D:\Documentos\FP\DWES\Unidad 2\Ejercicios\UD2.1\Proyecto\Proyecto\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+D:\Documentos\FP\DWES\Unidad 2\Ejercicios\UD2.1\Proyecto\Proyecto\obj\Debug\netcoreapp2.1\Proyecto.RazorTargetAssemblyInfo.cache
+D:\Documentos\FP\DWES\Unidad 2\Ejercicios\UD2.1\Proyecto\Proyecto\obj\Debug\netcoreapp2.1\Proyecto.RazorTargetAssemblyInfo.cs
+D:\Documentos\FP\DWES\Unidad 2\Ejercicios\UD2.1\Proyecto\Proyecto\obj\Debug\netcoreapp2.1\Proyecto.Views.pdb
+D:\Documentos\FP\DWES\Unidad 2\Ejercicios\UD2.1\Proyecto\Proyecto\obj\Debug\netcoreapp2.1\Proyecto.dll
+D:\Documentos\FP\DWES\Unidad 2\Ejercicios\UD2.1\Proyecto\Proyecto\obj\Debug\netcoreapp2.1\Proyecto.pdb
+D:\Documentos\FP\DWES\Unidad 2\Ejercicios\UD2.1\Proyecto\Proyecto\obj\Debug\netcoreapp2.1\Proyecto.csproj.CopyComplete
