@@ -1,0 +1,14 @@
+D:\Documentos\FP\DWES\Unidad 3\Ejercicios\UD3.1\Ejemplo\Ejemplo\obj\Debug\netcoreapp2.1\Ejemplo.csprojAssemblyReference.cache
+D:\Documentos\FP\DWES\Unidad 3\Ejercicios\UD3.1\Ejemplo\Ejemplo\obj\Debug\netcoreapp2.1\Ejemplo.csproj.CoreCompileInputs.cache
+D:\Documentos\FP\DWES\Unidad 3\Ejercicios\UD3.1\Ejemplo\Ejemplo\obj\Debug\netcoreapp2.1\Ejemplo.RazorAssemblyInfo.cache
+D:\Documentos\FP\DWES\Unidad 3\Ejercicios\UD3.1\Ejemplo\Ejemplo\bin\Debug\netcoreapp2.1\Ejemplo.deps.json
+D:\Documentos\FP\DWES\Unidad 3\Ejercicios\UD3.1\Ejemplo\Ejemplo\bin\Debug\netcoreapp2.1\Ejemplo.runtimeconfig.json
+D:\Documentos\FP\DWES\Unidad 3\Ejercicios\UD3.1\Ejemplo\Ejemplo\bin\Debug\netcoreapp2.1\Ejemplo.runtimeconfig.dev.json
+D:\Documentos\FP\DWES\Unidad 3\Ejercicios\UD3.1\Ejemplo\Ejemplo\bin\Debug\netcoreapp2.1\Ejemplo.dll
+D:\Documentos\FP\DWES\Unidad 3\Ejercicios\UD3.1\Ejemplo\Ejemplo\bin\Debug\netcoreapp2.1\Ejemplo.pdb
+D:\Documentos\FP\DWES\Unidad 3\Ejercicios\UD3.1\Ejemplo\Ejemplo\obj\Debug\netcoreapp2.1\Ejemplo.RazorAssemblyInfo.cs
+D:\Documentos\FP\DWES\Unidad 3\Ejercicios\UD3.1\Ejemplo\Ejemplo\obj\Debug\netcoreapp2.1\Ejemplo.AssemblyInfoInputs.cache
+D:\Documentos\FP\DWES\Unidad 3\Ejercicios\UD3.1\Ejemplo\Ejemplo\obj\Debug\netcoreapp2.1\Ejemplo.AssemblyInfo.cs
+D:\Documentos\FP\DWES\Unidad 3\Ejercicios\UD3.1\Ejemplo\Ejemplo\obj\Debug\netcoreapp2.1\Ejemplo.RazorTargetAssemblyInfo.cache
+D:\Documentos\FP\DWES\Unidad 3\Ejercicios\UD3.1\Ejemplo\Ejemplo\obj\Debug\netcoreapp2.1\Ejemplo.dll
+D:\Documentos\FP\DWES\Unidad 3\Ejercicios\UD3.1\Ejemplo\Ejemplo\obj\Debug\netcoreapp2.1\Ejemplo.pdb
