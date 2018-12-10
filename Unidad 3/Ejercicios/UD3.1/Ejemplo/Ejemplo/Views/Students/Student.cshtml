@@ -1,0 +1,19 @@
+﻿@model Ejemplo.Models.Student;
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Student</title>
+</head>
+<body>
+    Nombre: @Model.Nombre <br />
+    Apellidos: @Model.Apellidos <br />
+    Ciclo: @ViewData["Ciclo"]; <br />
+    Centro: @ViewBag.Centro;
+</body>
+</html>

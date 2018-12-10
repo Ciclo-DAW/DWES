@@ -1,0 +1,19 @@
+﻿@model Pedido
+@{ ViewData["Title"] = "Pedido"; }
+<table border="1">
+    <tr>
+        <th>Producto</th>
+        <th>Precio</th>
+    </tr>
+    @foreach (var Product in Model.Productos)
+{
+    <tr>
+        <td>@Product.Nombre</td>
+        <td>@Product.Precio</td>
+    </tr>
+}
+    <tr>
+        <td><b>Total</b></td>
+        <td><b>@Model.Total</b></td>
+    </tr>
+</table>

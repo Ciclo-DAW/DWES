@@ -8,9 +8,15 @@ namespace Ejemplo.Controllers
 {
     public class HomeController : Controller
     {
-        public String Index()
+        [NotOnSundaysFilter]
+        public IActionResult Index()
         {
-            return "Hola desde nuestro primer controlador";
+            return View();
+        }
+
+        public IActionResult Index2()
+        {
+            return new UpperStringActionResult("Hola desde nuestro primer controlador INDEX2");
         }
     }
 }

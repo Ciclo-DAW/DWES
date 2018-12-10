@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css" />
+</head>
+<body>
+    <div id="header" style="border-bottom: 2px solid #a63e00; text-align:center;">
+        @Html.Partial("_CompanyData")
+    </div>
+    <div id="row">
+        <div id="side" class="col-lg-2">
+            @await Component.InvokeAsync("Units")
+        </div>
+        <div class="col-lg-10" style="min-height:650px; margin-top:40px;">
+            @RenderBody()
+        </div>
+    </div>
+</body>
+</html>
