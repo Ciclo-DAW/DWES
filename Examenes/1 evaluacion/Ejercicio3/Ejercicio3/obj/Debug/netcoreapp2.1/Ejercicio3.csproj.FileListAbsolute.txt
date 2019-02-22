@@ -52,3 +52,30 @@ C:\Users\Brais\Desktop\Ejercicio3\Ejercicio3\obj\Debug\netcoreapp2.1\Ejercicio3.
 C:\Users\Brais\Desktop\Ejercicio3\Ejercicio3\obj\Debug\netcoreapp2.1\Ejercicio3.dll
 C:\Users\Brais\Desktop\Ejercicio3\Ejercicio3\obj\Debug\netcoreapp2.1\Ejercicio3.pdb
 C:\Users\Brais\Desktop\Ejercicio3\Ejercicio3\obj\Debug\netcoreapp2.1\Ejercicio3.csproj.CopyComplete
+D:\Documentos\FP\DWES\Examenes\1 evaluacion\Ejercicio3\Ejercicio3\bin\Debug\netcoreapp2.1\Ejercicio3.deps.json
+D:\Documentos\FP\DWES\Examenes\1 evaluacion\Ejercicio3\Ejercicio3\bin\Debug\netcoreapp2.1\Ejercicio3.runtimeconfig.json
+D:\Documentos\FP\DWES\Examenes\1 evaluacion\Ejercicio3\Ejercicio3\bin\Debug\netcoreapp2.1\Ejercicio3.runtimeconfig.dev.json
+D:\Documentos\FP\DWES\Examenes\1 evaluacion\Ejercicio3\Ejercicio3\bin\Debug\netcoreapp2.1\Ejercicio3.dll
+D:\Documentos\FP\DWES\Examenes\1 evaluacion\Ejercicio3\Ejercicio3\bin\Debug\netcoreapp2.1\Ejercicio3.pdb
+D:\Documentos\FP\DWES\Examenes\1 evaluacion\Ejercicio3\Ejercicio3\bin\Debug\netcoreapp2.1\Ejercicio3.Views.dll
+D:\Documentos\FP\DWES\Examenes\1 evaluacion\Ejercicio3\Ejercicio3\bin\Debug\netcoreapp2.1\Ejercicio3.Views.pdb
+D:\Documentos\FP\DWES\Examenes\1 evaluacion\Ejercicio3\Ejercicio3\obj\Debug\netcoreapp2.1\Ejercicio3.csprojAssemblyReference.cache
+D:\Documentos\FP\DWES\Examenes\1 evaluacion\Ejercicio3\Ejercicio3\obj\Debug\netcoreapp2.1\Ejercicio3.csproj.CoreCompileInputs.cache
+D:\Documentos\FP\DWES\Examenes\1 evaluacion\Ejercicio3\Ejercicio3\obj\Debug\netcoreapp2.1\Ejercicio3.RazorAssemblyInfo.cache
+D:\Documentos\FP\DWES\Examenes\1 evaluacion\Ejercicio3\Ejercicio3\obj\Debug\netcoreapp2.1\Ejercicio3.RazorAssemblyInfo.cs
+D:\Documentos\FP\DWES\Examenes\1 evaluacion\Ejercicio3\Ejercicio3\obj\Debug\netcoreapp2.1\Ejercicio3.AssemblyInfoInputs.cache
+D:\Documentos\FP\DWES\Examenes\1 evaluacion\Ejercicio3\Ejercicio3\obj\Debug\netcoreapp2.1\Ejercicio3.AssemblyInfo.cs
+D:\Documentos\FP\DWES\Examenes\1 evaluacion\Ejercicio3\Ejercicio3\obj\Debug\netcoreapp2.1\Ejercicio3.TagHelpers.input.cache
+D:\Documentos\FP\DWES\Examenes\1 evaluacion\Ejercicio3\Ejercicio3\obj\Debug\netcoreapp2.1\Ejercicio3.TagHelpers.output.cache
+D:\Documentos\FP\DWES\Examenes\1 evaluacion\Ejercicio3\Ejercicio3\obj\Debug\netcoreapp2.1\Ejercicio3.RazorCoreGenerate.cache
+D:\Documentos\FP\DWES\Examenes\1 evaluacion\Ejercicio3\Ejercicio3\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+D:\Documentos\FP\DWES\Examenes\1 evaluacion\Ejercicio3\Ejercicio3\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\Lista\Default.g.cshtml.cs
+D:\Documentos\FP\DWES\Examenes\1 evaluacion\Ejercicio3\Ejercicio3\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\Documentos\FP\DWES\Examenes\1 evaluacion\Ejercicio3\Ejercicio3\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+D:\Documentos\FP\DWES\Examenes\1 evaluacion\Ejercicio3\Ejercicio3\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+D:\Documentos\FP\DWES\Examenes\1 evaluacion\Ejercicio3\Ejercicio3\obj\Debug\netcoreapp2.1\Ejercicio3.RazorTargetAssemblyInfo.cache
+D:\Documentos\FP\DWES\Examenes\1 evaluacion\Ejercicio3\Ejercicio3\obj\Debug\netcoreapp2.1\Ejercicio3.RazorTargetAssemblyInfo.cs
+D:\Documentos\FP\DWES\Examenes\1 evaluacion\Ejercicio3\Ejercicio3\obj\Debug\netcoreapp2.1\Ejercicio3.Views.pdb
+D:\Documentos\FP\DWES\Examenes\1 evaluacion\Ejercicio3\Ejercicio3\obj\Debug\netcoreapp2.1\Ejercicio3.dll
+D:\Documentos\FP\DWES\Examenes\1 evaluacion\Ejercicio3\Ejercicio3\obj\Debug\netcoreapp2.1\Ejercicio3.pdb
+D:\Documentos\FP\DWES\Examenes\1 evaluacion\Ejercicio3\Ejercicio3\obj\Debug\netcoreapp2.1\Ejercicio3.csproj.CopyComplete

@@ -1,0 +1,76 @@
+﻿@model Ejercicio.Models.Candidato
+
+@{
+    ViewData["Title"] = "Candidato";
+}
+
+<h1>Candidato</h1>
+
+<div>
+  
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">Nombre</dt>
+        <dd class="col-sm-10">
+            @Model.Nombre
+        </dd>
+        <dt class="col-sm-2">
+            Apellidos
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Apellidos
+        </dd>
+        <dt class="col-sm-2">
+            Fecha de nacimiento
+        </dt>
+        <dd class="col-sm-10">
+            @Model.FechaNacimiento.ToShortDateString()
+        </dd>
+        <dt class="col-sm-2">
+            Teléfono
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Telefono
+        </dd>
+        <dt class="col-sm-2">
+            Móvil
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Movil
+        </dd>
+        <dt class="col-sm-2">
+            Nivel de estudios
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Estudios
+        </dd>
+        <dt class="col-sm-2">
+            Idiomas
+        </dt>
+        <dd class="col-sm-10">
+            @if (Model.Idiomas.Count > 0)
+            {
+                <text>@Model.Idiomas[0]</text>
+                for (int i = 1; i < Model.Idiomas.Count; i++)
+                {
+                    <text>, @Model.Idiomas[i]</text>
+                }
+            }
+        </dd>
+        <dt class="col-sm-2">
+            Vehículo propio
+        </dt>
+        <dd class="col-sm-10">
+            @(Model.Coche ? "Si" : "No")
+        </dd>
+        <dt class="col-sm-2">
+            Observaciones
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Observaciones
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Index">Volver al formulario</a>
+</div>

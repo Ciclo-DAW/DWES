@@ -1,0 +1,97 @@
+﻿@model TareaUD4.Models.Informacion
+
+@{
+    ViewData["Title"] = "Resultado"; }
+
+<h2>Resultado</h2>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            <label asp-for="Nombre">Nombre</label>
+        </dt>
+        <dd>
+            @Model.Nombre
+        </dd>
+        <dt>
+            <label asp-for="Apellidos">Apellidos</label>
+        </dt>
+        <dd>
+            @Model.Apellidos
+        </dd>
+        <dt>
+            <label asp-for="Fecha">Fecha de nacimiento</label>
+        </dt>
+        <dd>
+            @Model.Fecha
+        </dd>
+        <dt>
+            <label asp-for="Telefono">Teléfono</label>
+        </dt>
+        <dd>
+            @Model.Telefono
+        </dd>
+        <dt>
+            <label asp-for="Movil">Móvil</label>
+        </dt>
+        <dd>
+            @Model.Movil
+        </dd>
+        <dt>
+            <label asp-for="Estudios">Estudios</label>
+        </dt>
+        <dd>
+            @Model.Estudios
+        </dd>
+        <dt>
+            <label asp-for="Idioma">Idioma</label>
+        </dt>
+        <dd>
+            @{
+                string idiomas = "";
+                if (Model.Idioma.Length == 1)
+                {
+                    idiomas = Model.Idioma[0];
+                }
+                else
+                {
+                    for (int i = 0; i <= Model.Idioma.Length - 1; i++)
+                    {
+                        idiomas = idiomas + Model.Idioma[i] + ", ";
+                    }
+                    idiomas = idiomas.Substring(0, idiomas.Length - 2);
+                }
+            }
+            @idiomas
+        </dd>
+        <dt>
+            <label asp-for="Vehiculo">Vehiculo propio</label>
+        </dt>
+        <dd>
+            @{
+                string vehiculo = "";
+                if (Model.Vehiculo == "false")
+                {
+                    vehiculo = "No";
+                }
+                else
+                {
+                    vehiculo = "Sí";
+                }
+            }
+
+            @vehiculo
+        </dd>
+        <dt>
+            <label asp-for="Observaciones">Observaciones</label>
+        </dt>
+        <dd>
+            @Model.Observaciones
+        </dd>
+
+    </dl>
+</div>
+<div>
+    <a asp-action="comprobar">Volver al formulario</a>
+</div>
+

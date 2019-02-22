@@ -1,0 +1,12 @@
+﻿@model Dni
+@{
+    ViewData["Title"] = "Ejercicio 4.2.2 - DNI Completo";
+}
+
+<div class="text-center">
+    <h2>DNI: @Model.DniCompleto</h2>
+
+    @* Añadimos un enlace que permita volver fácilmente al formulario principal, para eso usamos un TagHelper 
+        que indica el nombre de la acción y el html resultante tendrá la ruta generada de forma automática*@
+    <a asp-action="Index">Volver al formulario</a>
+</div>

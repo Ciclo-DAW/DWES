@@ -1,0 +1,19 @@
+﻿@model Dni
+
+@{
+    ViewData["Title"] = "Ejercicio 4.2.2 - Formulario";
+}
+
+<div class="text-center">
+    <form method="post">
+        Introduzca su DNI sin la letra:
+        <input asp-for="DniSinLetra" size="8" maxlength="8" />
+        <input type="submit" value="Aceptar" />
+        <span asp-validation-for="DniSinLetra" style="color:red"></span>
+    </form>
+</div>
+
+@* Incluímos scripts para validación de lado cliente *@
+@section Scripts { 
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");} 
+}

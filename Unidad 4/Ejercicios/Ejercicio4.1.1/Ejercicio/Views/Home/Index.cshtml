@@ -1,0 +1,28 @@
+﻿@model HomeViewModel
+
+@{
+    ViewData["Title"] = "Ejercicio 4.1.1";
+}
+
+<div class="text-center">
+    <form method="post">
+        Texto:
+        <input name="text" size="50" />
+        <input type="submit" value="Aceptar" />
+    </form>
+
+    @*Como en este ejercicio no hemos utilizado validación de datos, el texto podría ser nulo,
+        por lo que debemos comprobar esto primero antes de intentar mostrar las rotaciones*@
+    @if (!String.IsNullOrEmpty(Model.Text))
+    {
+        <br/>
+        <h2>Rotaciones del texto:</h2>
+        <ul>
+            <li>@Model.Text</li>
+            @foreach (var rotation in Model.Rotations)
+            {
+                <li>@rotation</li>
+            }
+        </ul>
+    }
+</div>

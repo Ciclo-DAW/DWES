@@ -1,0 +1,37 @@
+﻿
+@{
+ViewData["Title"] = "Comprobar datos de censo";
+}
+
+@model Ejemplo1.Models.Persona
+
+<form action="/censo/comprobar" method="post">
+    <table>
+        <tr>
+            <td>
+                <label asp-for="Nombre">Nombre</label>
+            </td>
+            <td>
+                <input asp-for="Nombre" />
+            </td>
+            <td><span asp-validation-for="Nombre" style="color:red"></span></td>
+        </tr>
+        <tr>
+
+            <td>
+                <label asp-for="Dni">DNI</label>
+            </td>
+            <td>
+                <input asp-for="Dni" />
+            </td>
+            <td><span asp-validation-for="Dni" style="color:red"></span></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" />
+            </td>
+        </tr>
+    </table>
+</form>
+
+@section Scripts { @{await Html.RenderPartialAsync("_ValidationScriptsPartial");} }

@@ -1,0 +1,101 @@
+﻿@model Candidato
+
+@{
+    ViewData["Title"] = "Tarea UD4 - Formulario";
+}
+
+    <form method="post">
+        <h4 class="text-left">Datos personales:</h4>
+        <div class="form-group row">
+            <label asp-for="Nombre" class="col-sm-2 col-form-label">Nombre</label>
+            <div class="col-sm-6">
+                <input asp-for="Nombre" class="form-control">
+            </div>
+            <span asp-validation-for="Nombre" class="col-sm-4" style="color:red"></span>
+        </div>
+        <div class="form-group row">
+            <label asp-for="Apellidos" class="col-sm-2 col-form-label">Apellidos</label>
+            <div class="col-sm-6">
+                <input asp-for="Apellidos" class="form-control">
+            </div>
+            <span asp-validation-for="Apellidos" class="col-sm-4" style="color:red"></span>
+        </div>
+        <div class="form-group row">
+            <label asp-for="Telefono" class="col-sm-2 col-form-label">Teléfono</label>
+            <div class="col-sm-2">
+                <input asp-for="Telefono" class="form-control">
+            </div>
+            <label asp-for="Movil" class="col-sm-1 offset-sm-1 col-form-label">Móvil</label>
+            <div class="col-sm-2">
+                <input asp-for="Movil" class="form-control">
+            </div>
+            <span asp-validation-for="Telefono" class="col-sm-4" style="color:red"></span>
+        </div>
+        <hr />
+
+        <div class="form-group row">
+            <h5 class="col-sm-3">Nivel de estudios:</h5>
+            <div>
+                <div class="custom-control custom-radio">
+                    <input asp-for="Estudios" type="radio" id="radio1" class="custom-control-input" 
+                        value="ESO" checked>
+                    <label class="custom-control-label" for="radio1">ESO</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input asp-for="Estudios" type="radio" id="radio2" class="custom-control-input" 
+                        value="Bachillerato">
+                    <label class="custom-control-label" for="radio2">Bachillerato</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input asp-for="Estudios" type="radio" id="radio3" class="custom-control-input" 
+                        value="Ciclo formativo de grado medio">
+                    <label class="custom-control-label" for="radio3">Ciclo formativo de grado medio</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input asp-for="Estudios" type="radio" id="radio4" class="custom-control-input"
+                           value="Ciclo formativo de grado superior">
+                    <label class="custom-control-label" for="radio4">Ciclo formativo de grado superior</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input asp-for="Estudios" type="radio" id="radio5" class="custom-control-input"
+                           value="Estudios Universitarios">
+                    <label class="custom-control-label" for="radio5">Estudios universitarios</label>
+                </div>
+            </div>
+        </div>
+        <hr />
+
+        <div class="form-group row">
+            <h5 class="col-sm-2">Idiomas:</h5>
+            <select class="custom-select col-sm-6" asp-for="Idiomas" multiple>
+                <option selected>Español</option>
+                <option>Gallego</option>
+                <option>Inglés</option>
+                <option>Francés</option>
+                <option>Chino</option>
+            </select>
+        </div>
+        <hr />
+
+        <div class="form-group row">
+            <h5 class="col-sm-2">Otros:</h5>  
+            <div class="custom-control custom-checkbox col-sm-6 offset-sm-1">
+                <input type="checkbox" class="custom-control-input" asp-for="Coche">
+                <label class="custom-control-label" asp-for="Coche">Vehículo propio</label>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="Observaciones" class="col-sm-2 col-form-label">Observaciones</label>
+            <div class="col-sm-6">
+                <textarea asp-for="Observaciones" class="form-control" rows="4" cols="50"></textarea>
+            </div>
+        </div>
+        <hr />
+
+        <button type="submit" class="btn btn-primary mb-2 float-left">Aceptar</button>
+    </form>
+
+@* Incluímos scripts para validación de lado cliente *@
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

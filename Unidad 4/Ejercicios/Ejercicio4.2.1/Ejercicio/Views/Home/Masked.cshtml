@@ -1,0 +1,19 @@
+﻿@model string
+@{
+    ViewData["Title"] = "Ejercicio 4.2.1 - Texto enmascarado";
+}
+
+<div class="text-center">
+    <h2>@Model</h2>
+    <h2>
+    @* Podemos considerar que todo el trabajo que se hace en este ejemplo es de presentación,
+    por eso lo hacemos directamente en la vista sin necesidad de un modelo*@
+    @foreach (var c in Model)
+    {
+        <text>*</text>
+    }
+    </h2>
+    @* Añadimos un enlace que permita volver fácilmente al formulario principal, para eso usamos un TagHelper 
+        que indica el nombre de la acción y el html resultante tendrá la ruta generada de forma automática*@
+    <a asp-action="Index">Volver al formulario</a>
+</div>

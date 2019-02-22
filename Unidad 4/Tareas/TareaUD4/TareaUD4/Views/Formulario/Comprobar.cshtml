@@ -1,0 +1,76 @@
+﻿
+@{
+    ViewData["Title"] = "Tarea UD04";
+}
+
+@model TareaUD4.Models.Informacion
+
+<form action="/formulario/comprobar" method="post">
+    <div>
+        <h2 class="titulo">Datos Personales:</h2>
+        <p>
+            <label asp-for="Nombre">Nombre</label>
+            <input asp-for="Nombre" />
+            <span asp-validation-for="Nombre" style="color:red"></span>
+        </p>
+
+        <p>
+            <label asp-for="Apellidos">Apellidos</label>
+            <input asp-for="Apellidos" />
+            <span asp-validation-for="Apellidos" style="color:red"></span>
+        </p>
+        <p>
+            <label asp-for="Fecha">Fecha de nacimiento</label>
+            <input asp-for="Fecha" type="date" />
+            <span asp-validation-for="Fecha" style="color:red"></span>
+        </p>
+        <p>
+            <label asp-for="Telefono">Teléfono</label>
+            <input asp-for="Telefono" />
+            <span asp-validation-for="Telefono" style="color:red"></span>
+
+            <label asp-for="Movil">Movil</label>
+            <input asp-for="Movil" />
+            <span asp-validation-for="Movil" style="color:red"></span>
+        </p>
+
+    </div>
+    <div>
+        <p>
+            <label class="titulo" asp-for="Estudios">Nivel de estudios</label>
+            <ul class="lista" style="list-style: none; ">
+                <li><input asp-for="Estudios" type="radio" name="estudios" value="ESO" checked="checked">ESO
+                <li><input asp-for="Estudios" type="radio" name="estudios" value="Bachillerato">Bachillerato
+                <li><input asp-for="Estudios" type="radio" name="estudios" value="Ciclo formativo de grado medio">Ciclo formativo de grado medio
+                <li><input asp-for="Estudios" type="radio" name="estudios" value="Ciclo formativo de grado superior">Ciclo formativo de grado superior
+                <li><input asp-for="Estudios" type="radio" name="estudios" value="Estudios universitarios">Estudios universitarios
+            </ul>
+        </p>
+    </div>
+    <div>
+        <p>
+            <label class="titulo" asp-for="Idioma">Idiomas: </label>
+            <select asp-for="Idioma" size="5" multiple="multiple">
+                <option selected="selected" value="Español">Español</option>
+                <option value="Gallego">Galego</option>
+                <option value="Inglés">Inglés</option>
+                <option value="Frances">Francés</option>
+                <option value="Alemán">Alemán</option>
+            </select>
+        </p>
+    </div>
+    <div>   
+        <h3 class="titulo">Otros</h3>
+            <p><input type="checkbox" asp-for="Vehiculo"> Vehículo propio</p>
+            <p>
+                <label asp-for="Observaciones">Observaciones</label> 
+                <textarea rows="2" cols="30" asp-for="Observaciones"></textarea>
+            </p>
+    </div>
+    <input type="submit" />
+
+
+
+</form>
+
+@section Scripts { @{await Html.RenderPartialAsync("_ValidationScriptsPartial");} }

@@ -1,0 +1,26 @@
+﻿@model Ejemplo1.Models.Persona
+
+@{
+ViewData["Title"] = "Información"; }
+
+<h2>Información</h2>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            <label asp-for="Nombre">Nombre</label>
+        </dt>
+        <dd>
+            @Model.Nombre
+        </dd>
+        <dt>
+            <label asp-for="Dni">Dni</label>
+        </dt>
+        <dd>
+            @Model.Dni
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="comprobar">Volver</a>
+</div>

@@ -1,0 +1,24 @@
+﻿@model Tarot
+
+@{
+    ViewData["Title"] = "Ejercicio 4.1.2";
+}
+
+<div class="text-center">
+    <form method="post">
+        Fecha de nacimiento:
+        <input name="date" type="date" />
+        <input type="submit" value="Aceptar" />
+    </form>
+
+
+    @if (Model != null)
+    {
+        <br/>
+        <h2>Número de tarot para la fecha @Model.Date.ToShortDateString(): @Model.NumeroDeTarot</h2>
+    }
+</div>
+
+
+
+

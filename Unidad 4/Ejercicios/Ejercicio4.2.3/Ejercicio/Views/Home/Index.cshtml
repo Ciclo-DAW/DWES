@@ -1,0 +1,22 @@
+﻿@model WordsViewModel
+
+@{
+    ViewData["Title"] = "Ejercicio 4.2.3 - Formulario";
+}
+
+<div class="text-center">
+    <form method="post">
+        Introduzca una palabra:
+        <input asp-for="Word" />
+        <input type="submit" value="Aceptar" />
+        <span asp-validation-for="Word" style="color:red"></span>
+    </form>
+</div>
+
+@*Mostramos el ViewComponent pasándole la lista de palabras*@
+@await Component.InvokeAsync("Words", Model.Words.List)
+
+@* Incluímos scripts para validación de lado cliente *@
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
