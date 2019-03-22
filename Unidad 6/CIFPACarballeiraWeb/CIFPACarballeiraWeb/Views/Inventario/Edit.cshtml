@@ -1,0 +1,106 @@
+﻿@model CIFPACarballeiraWeb.Models.Material
+
+@{
+    ViewData["Title"] = "Actualizar inventario";
+}
+
+<h4>Actualizar inventario</h4>
+<hr />
+<div class="row">
+    <div class="col-md-12">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ID" />
+            <div class="form-row">
+                <div class="form-group col-md-7">
+                    <label asp-for="Nombre" class="control-label"></label>
+                    <input asp-for="Nombre" class="form-control" />
+                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-4 offset-1">
+                    <label asp-for="NumSerie" class="control-label"></label>
+                    <input asp-for="NumSerie" class="form-control" />
+                    <span asp-validation-for="NumSerie" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Descripcion" class="control-label"></label>
+                <input asp-for="Descripcion" class="form-control" />
+                <span asp-validation-for="Descripcion" class="text-danger"></span>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-1">
+                    <label asp-for="Cantidad" class="control-label"></label>
+                    <input asp-for="Cantidad" class="form-control" />
+                </div>
+                <div class="form-group col-md-5 offset-1">
+                    <label asp-for="TipoMaterial" class="control-label"></label>
+                    <select asp-for="TipoMaterial" class="form-control"
+                            asp-items="Html.GetEnumSelectList<TiposMaterial>()"></select>
+                </div>
+                <div class="form-group col-md-4 offset-1">
+                    <label asp-for="TipoUso" class="control-label"></label>
+                    <select asp-for="TipoUso" class="form-control"
+                            asp-items="Html.GetEnumSelectList<TiposUso>()"></select>
+                </div>
+            </div>
+            <div class="form-group" style="margin-top: -17px;">
+                <span asp-validation-for="Cantidad" class="text-danger"></span>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label asp-for="Departamento" class="control-label"></label>
+                    <select asp-for="DepartamentoId" class="form-control" asp-items="ViewBag.DepartamentoId"></select>
+                </div>
+                <div class="form-group col-md-4 offset-1">
+                    <label asp-for="Ubicacion" class="control-label"></label>
+                    <select asp-for="UbicacionId" class="form-control" asp-items="ViewBag.UbicacionId"></select>
+                </div>
+                <div class="form-group col-md-2 offset-1">
+                    <label asp-for="Estado" class="control-label"></label>
+                    <select asp-for="Estado" class="form-control"
+                            asp-items="Html.GetEnumSelectList<Estados>()"></select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label asp-for="Proveedor" class="control-label"></label>
+                    <input asp-for="Proveedor" class="form-control" />
+                    <span asp-validation-for="Proveedor" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-2 offset-1">
+                    <label asp-for="FechaRecepcion" class="control-label"></label>
+                    <input asp-for="FechaRecepcion" class="form-control" />
+                    <span asp-validation-for="FechaRecepcion" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-2 offset-1">
+                    <label asp-for="FechaRetirada" class="control-label"></label>
+                    <input asp-for="FechaRetirada" class="form-control" />
+                    <span asp-validation-for="FechaRetirada" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-2">
+                    <label asp-for="FechaGarantia" class="control-label"></label>
+                    <input asp-for="FechaGarantia" class="form-control" />
+                    <span asp-validation-for="FechaGarantia" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-9 offset-1">
+                    <label asp-for="InfoGarantia" class="control-label"></label>
+                    <input asp-for="InfoGarantia" class="form-control" />
+                    <span asp-validation-for="InfoGarantia" class="text-danger"></span>
+                </div>
+            </div>
+
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Actualizar" class="btn btn-primary" /> |
+                <a asp-action="Index"> <i class="fas fa-undo-alt"></i> Volver</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

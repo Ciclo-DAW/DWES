@@ -26,3 +26,31 @@ C:\Users\VíctorManuel\Desktop\Ejercicio\Ejercicio\obj\Debug\netcoreapp2.2\Ejerc
 C:\Users\VíctorManuel\Desktop\Ejercicio\Ejercicio\obj\Debug\netcoreapp2.2\Ejercicio.pdb
 C:\Users\VíctorManuel\Desktop\Ejercicio\Ejercicio\obj\Debug\netcoreapp2.2\Ejercicio.csproj.CopyComplete
 C:\Users\VíctorManuel\Desktop\Ejercicio\Ejercicio\obj\Debug\netcoreapp2.2\Razor\Views\Home\Detail.g.cshtml.cs
+D:\Documentos\FP\DWES\Unidad 4\Tareas\TareaUD4-Solucion\Ejercicio\bin\Debug\netcoreapp2.2\Ejercicio.deps.json
+D:\Documentos\FP\DWES\Unidad 4\Tareas\TareaUD4-Solucion\Ejercicio\bin\Debug\netcoreapp2.2\Ejercicio.runtimeconfig.json
+D:\Documentos\FP\DWES\Unidad 4\Tareas\TareaUD4-Solucion\Ejercicio\bin\Debug\netcoreapp2.2\Ejercicio.runtimeconfig.dev.json
+D:\Documentos\FP\DWES\Unidad 4\Tareas\TareaUD4-Solucion\Ejercicio\bin\Debug\netcoreapp2.2\Ejercicio.dll
+D:\Documentos\FP\DWES\Unidad 4\Tareas\TareaUD4-Solucion\Ejercicio\bin\Debug\netcoreapp2.2\Ejercicio.pdb
+D:\Documentos\FP\DWES\Unidad 4\Tareas\TareaUD4-Solucion\Ejercicio\bin\Debug\netcoreapp2.2\Ejercicio.Views.dll
+D:\Documentos\FP\DWES\Unidad 4\Tareas\TareaUD4-Solucion\Ejercicio\bin\Debug\netcoreapp2.2\Ejercicio.Views.pdb
+D:\Documentos\FP\DWES\Unidad 4\Tareas\TareaUD4-Solucion\Ejercicio\obj\Debug\netcoreapp2.2\Ejercicio.csprojAssemblyReference.cache
+D:\Documentos\FP\DWES\Unidad 4\Tareas\TareaUD4-Solucion\Ejercicio\obj\Debug\netcoreapp2.2\Ejercicio.csproj.CoreCompileInputs.cache
+D:\Documentos\FP\DWES\Unidad 4\Tareas\TareaUD4-Solucion\Ejercicio\obj\Debug\netcoreapp2.2\Ejercicio.RazorAssemblyInfo.cache
+D:\Documentos\FP\DWES\Unidad 4\Tareas\TareaUD4-Solucion\Ejercicio\obj\Debug\netcoreapp2.2\Ejercicio.RazorAssemblyInfo.cs
+D:\Documentos\FP\DWES\Unidad 4\Tareas\TareaUD4-Solucion\Ejercicio\obj\Debug\netcoreapp2.2\Ejercicio.AssemblyInfoInputs.cache
+D:\Documentos\FP\DWES\Unidad 4\Tareas\TareaUD4-Solucion\Ejercicio\obj\Debug\netcoreapp2.2\Ejercicio.AssemblyInfo.cs
+D:\Documentos\FP\DWES\Unidad 4\Tareas\TareaUD4-Solucion\Ejercicio\obj\Debug\netcoreapp2.2\Ejercicio.TagHelpers.input.cache
+D:\Documentos\FP\DWES\Unidad 4\Tareas\TareaUD4-Solucion\Ejercicio\obj\Debug\netcoreapp2.2\Ejercicio.TagHelpers.output.cache
+D:\Documentos\FP\DWES\Unidad 4\Tareas\TareaUD4-Solucion\Ejercicio\obj\Debug\netcoreapp2.2\Ejercicio.RazorCoreGenerate.cache
+D:\Documentos\FP\DWES\Unidad 4\Tareas\TareaUD4-Solucion\Ejercicio\obj\Debug\netcoreapp2.2\Razor\Views\Home\Detail.g.cshtml.cs
+D:\Documentos\FP\DWES\Unidad 4\Tareas\TareaUD4-Solucion\Ejercicio\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+D:\Documentos\FP\DWES\Unidad 4\Tareas\TareaUD4-Solucion\Ejercicio\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\Documentos\FP\DWES\Unidad 4\Tareas\TareaUD4-Solucion\Ejercicio\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\Documentos\FP\DWES\Unidad 4\Tareas\TareaUD4-Solucion\Ejercicio\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+D:\Documentos\FP\DWES\Unidad 4\Tareas\TareaUD4-Solucion\Ejercicio\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+D:\Documentos\FP\DWES\Unidad 4\Tareas\TareaUD4-Solucion\Ejercicio\obj\Debug\netcoreapp2.2\Ejercicio.RazorTargetAssemblyInfo.cache
+D:\Documentos\FP\DWES\Unidad 4\Tareas\TareaUD4-Solucion\Ejercicio\obj\Debug\netcoreapp2.2\Ejercicio.RazorTargetAssemblyInfo.cs
+D:\Documentos\FP\DWES\Unidad 4\Tareas\TareaUD4-Solucion\Ejercicio\obj\Debug\netcoreapp2.2\Ejercicio.Views.pdb
+D:\Documentos\FP\DWES\Unidad 4\Tareas\TareaUD4-Solucion\Ejercicio\obj\Debug\netcoreapp2.2\Ejercicio.dll
+D:\Documentos\FP\DWES\Unidad 4\Tareas\TareaUD4-Solucion\Ejercicio\obj\Debug\netcoreapp2.2\Ejercicio.pdb
+D:\Documentos\FP\DWES\Unidad 4\Tareas\TareaUD4-Solucion\Ejercicio\obj\Debug\netcoreapp2.2\Ejercicio.csproj.CopyComplete

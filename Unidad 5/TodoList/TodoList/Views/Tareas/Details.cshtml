@@ -1,0 +1,21 @@
+﻿@model TodoList.Models.Tarea
+
+@{
+    ViewData["Title"] = "Detalle de tarea";
+}
+
+<div>
+    <h4>Detalle de tarea</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            Descripción
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Index"><i class="fas fa-undo-alt"></i> Volver a tareas</a>
+</div>

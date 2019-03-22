@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="CIFPACarballeiraWeb.Models.Departamento">
+    <Position X="2.25" Y="2.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAgAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Departamento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CIFPACarballeiraWeb.Models.Material">
+    <Position X="6.25" Y="2" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAFAAIAAgQIEAAAAhIABEJAAAAAAAAAAAIAAABg=</HashCode>
+      <FileName>Models\Material.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Departamento" />
+      <Property Name="Ubicacion" />
+      <Property Name="TipoUso" />
+      <Property Name="TipoMaterial" />
+      <Property Name="Estado" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CIFPACarballeiraWeb.Models.Ubicacion">
+    <Position X="10" Y="2" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAgAIBAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Ubicacion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="CIFPACarballeiraWeb.Models.TiposUso">
+    <Position X="4.25" Y="5.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAIAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Models\Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CIFPACarballeiraWeb.Models.TiposMaterial">
+    <Position X="6.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAgAAAAACAAAAAAAACAAAAAAAAAAQQACAAAAAA=</HashCode>
+      <FileName>Models\Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CIFPACarballeiraWeb.Models.Estados">
+    <Position X="9.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Models\Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

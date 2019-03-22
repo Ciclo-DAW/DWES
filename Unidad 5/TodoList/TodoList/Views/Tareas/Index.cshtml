@@ -1,0 +1,34 @@
+﻿@model IEnumerable<TodoList.Models.Tarea>
+
+@{
+    ViewData["Title"] = "Lista de tareas";
+}
+
+<h2>Tareas pendientes</h2>
+
+<p>
+    <a asp-action="Create"><i class="fas fa-plus-circle"></i> Nueva tarea</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Descripción
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descripcion)
+            </td>
+            <td>
+                <a asp-action="Details" asp-route-id="@item.Id" title="Detalle"><i class="fas fa-search"></i></a> |
+                <a asp-action="Do" asp-route-id="@item.Id" title="Realizar tarea"><i class="fas fa-check"></i></a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

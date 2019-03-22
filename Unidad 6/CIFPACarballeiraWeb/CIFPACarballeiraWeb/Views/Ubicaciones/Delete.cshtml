@@ -1,0 +1,32 @@
+﻿@model CIFPACarballeiraWeb.Models.Ubicacion
+
+@{
+    ViewData["Title"] = "Eliminar ubicación";
+}
+
+<h3>Eliminar ubicación</h3>
+
+<h4>Estás seguro de eliminar la ubicación?</h4>
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ID" />
+        <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+        <a asp-action="Index"><i class="fa fa-backward"></i> Volver</a>
+    </form>
+</div>

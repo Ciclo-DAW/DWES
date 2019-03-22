@@ -1,0 +1,107 @@
+﻿@model CIFPACarballeiraWeb.Models.Material
+
+@{
+    ViewData["Title"] = "Detalle de material";
+}
+
+<div>
+    <h4>Detalle de material</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-1">
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+        <dd class="col-sm-7">
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NumSerie)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.NumSerie)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+
+        <dt class="col-sm-1">
+            @Html.DisplayNameFor(model => model.Cantidad)
+        </dt>
+        <dd class="col-sm-1">
+            @Html.DisplayFor(model => model.Cantidad)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TipoMaterial)
+        </dt>
+        <dd class="col-sm-4">
+            @Html.DisplayFor(model => model.TipoMaterial)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TipoUso)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.TipoUso)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Departamento)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Departamento.Nombre)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Ubicacion)
+        </dt>
+        <dd class="col-sm-3">
+            @Html.DisplayFor(model => model.Ubicacion.Nombre)
+        </dd>
+        <dt class="col-sm-1">
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Estado)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Proveedor)
+        </dt>
+        <dd class="col-sm-4">
+            @Html.DisplayFor(model => model.Proveedor)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FechaRecepcion)
+        </dt>
+        <dd class="col-sm-1">
+            @Html.DisplayFor(model => model.FechaRecepcion)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FechaRetirada)
+        </dt>
+        <dd class="col-sm-1">
+            @Html.DisplayFor(model => model.FechaRetirada)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FechaGarantia)
+        </dt>
+        <dd class="col-sm-1">
+            @Html.DisplayFor(model => model.FechaGarantia)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.InfoGarantia)
+        </dt>
+        <dd class="col-sm-7">
+            @Html.DisplayFor(model => model.InfoGarantia)
+        </dd>
+    </dl>
+</div>
+
+<br/>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID"><i class="fas fa-edit"></i> Actualizar</a> |
+    <a asp-action="Index"><i class="fas fa-undo-alt"></i> Volver</a>
+</div>

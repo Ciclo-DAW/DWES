@@ -1,0 +1,26 @@
+﻿@model TodoList.Models.Tarea
+
+@{
+    ViewData["Title"] = "Realizar tarea";
+}
+
+<h2>Realizar tarea</h2>
+
+<h4>¿Está seguro de marcar la tarea como realizada?</h4>
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            Descripción
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+    </dl>
+    
+    <form asp-action="Aceptar">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Realizar tarea" class="btn btn-danger" /> |
+        <a asp-action="Index"><i class="fas fa-undo-alt"></i> Volver a tareas</a>
+    </form>
+</div>
