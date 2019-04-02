@@ -40,7 +40,7 @@ namespace GameStore.Controllers
                 .FirstOrDefaultAsync(m => m.ID == id);
 
             var resultados = await _context.Juegos.Include(j => j.Tienda).Where
-                (m => m.Nombre == juego.Nombre).ToListAsync(); //Devolver todos los resultados en los que el nombre es igual al nombre del juego actual
+                (m => (m.Nombre == juego.Nombre) && (m.Modelo == juego.Modelo)).ToListAsync(); //Devolver todos los resultados en los que el nombre es igual al nombre del juego actual
 
             if (juego == null)
             {

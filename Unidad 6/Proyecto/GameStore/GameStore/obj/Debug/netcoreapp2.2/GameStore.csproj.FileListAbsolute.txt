@@ -118,3 +118,9 @@ D:\Documentos\FP\DWES\Unidad 6\Backups\Proyecto\GameStore\GameStore\obj\Debug\ne
 D:\Documentos\FP\DWES\Unidad 6\Backups\Proyecto\GameStore\GameStore\obj\Debug\netcoreapp2.2\Razor\Views\Account\NewUser.g.cshtml.cs
 D:\Documentos\FP\DWES\Unidad 6\Backups\Proyecto\GameStore\GameStore\obj\Debug\netcoreapp2.2\Razor\Views\Account\Users.g.cshtml.cs
 D:\Documentos\FP\DWES\Unidad 6\Backups\Proyecto\GameStore\GameStore\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LoginPartial.g.cshtml.cs
+D:\Documentos\FP\DWES\Unidad 6\Proyecto\GameStore\GameStore\obj\Debug\netcoreapp2.2\Razor\Views\Account\ChangePassword.g.cshtml.cs
+D:\Documentos\FP\DWES\Unidad 6\Proyecto\GameStore\GameStore\obj\Debug\netcoreapp2.2\Razor\Views\Account\Delete.g.cshtml.cs
+D:\Documentos\FP\DWES\Unidad 6\Proyecto\GameStore\GameStore\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.g.cshtml.cs
+D:\Documentos\FP\DWES\Unidad 6\Proyecto\GameStore\GameStore\obj\Debug\netcoreapp2.2\Razor\Views\Account\NewUser.g.cshtml.cs
+D:\Documentos\FP\DWES\Unidad 6\Proyecto\GameStore\GameStore\obj\Debug\netcoreapp2.2\Razor\Views\Account\Users.g.cshtml.cs
+D:\Documentos\FP\DWES\Unidad 6\Proyecto\GameStore\GameStore\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LoginPartial.g.cshtml.cs

@@ -12950,11 +12950,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documentos\\FP\\DWES\\Unidad 6\\Backups\\Proyecto\\GameStore\\GameStore\\GameStore.csproj",
+      "projectUniqueName": "D:\\Documentos\\FP\\DWES\\Unidad 6\\Proyecto\\GameStore\\GameStore\\GameStore.csproj",
       "projectName": "GameStore",
-      "projectPath": "D:\\Documentos\\FP\\DWES\\Unidad 6\\Backups\\Proyecto\\GameStore\\GameStore\\GameStore.csproj",
+      "projectPath": "D:\\Documentos\\FP\\DWES\\Unidad 6\\Proyecto\\GameStore\\GameStore\\GameStore.csproj",
       "packagesPath": "C:\\Users\\Brais\\.nuget\\packages\\",
-      "outputPath": "D:\\Documentos\\FP\\DWES\\Unidad 6\\Backups\\Proyecto\\GameStore\\GameStore\\obj\\",
+      "outputPath": "D:\\Documentos\\FP\\DWES\\Unidad 6\\Proyecto\\GameStore\\GameStore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

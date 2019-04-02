@@ -62,6 +62,7 @@ body {
 .items__list {
     display: flex;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 .items__item{

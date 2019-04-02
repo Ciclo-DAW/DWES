@@ -7,7 +7,7 @@
     ViewData["Title"] = "Todos los juegos";
 }
 
-<h1>Todos los @Html.DisplayFor(model => model[0].Nombre)</h1>
+<h1>Todos los @Html.DisplayFor(model => model[0].Nombre) para @Html.DisplayFor(model => model[0].Modelo)</h1>
 
 <div class="items__list">
     @foreach (var item in Model)
