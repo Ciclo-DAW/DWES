@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<GameStore.Models.Marca>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Marcas";
 }
 
 <h1>Marcas</h1>
 
 <p>
-    <a asp-action="Create">Añadir Marca</a>
+    <a class="boton-normal" asp-action="Create">Añadir Marca</a>
 </p>
 <table class="table">
     <thead>
@@ -25,8 +25,8 @@
                 @Html.DisplayFor(modelItem => item.Nombre)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.ID">Editar</a> |
-                <a asp-action="Delete" asp-route-id="@item.ID">Borrar</a>
+                <a class="boton-normal" asp-action="Edit" asp-route-id="@item.ID">Editar</a>
+                <a class="boton-normal" asp-action="Delete" asp-route-id="@item.ID">Borrar</a>
             </td>
         </tr>
 }

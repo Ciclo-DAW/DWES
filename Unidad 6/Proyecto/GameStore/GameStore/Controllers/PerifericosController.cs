@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using GameStore.Data;
 using GameStore.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace GameStore.Controllers
 {
@@ -72,6 +73,7 @@ namespace GameStore.Controllers
         }
 
         // GET: Perifericos/Create
+        [Authorize]
         public IActionResult Create()
         {
             ViewData["MarcaId"] = new SelectList(_context.Marca, "ID", "Nombre");
@@ -84,6 +86,7 @@ namespace GameStore.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> Create([Bind("ID,MarcaId,Modelo,Descripcion,Cantidad,Precio,FechaSalida,Estado,Tipo,TiendaId")] Periferico periferico)
         {
             if (ModelState.IsValid)
@@ -98,6 +101,7 @@ namespace GameStore.Controllers
         }
 
         // GET: Perifericos/Edit/5
+        [Authorize]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -120,6 +124,7 @@ namespace GameStore.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> Edit(int id, [Bind("ID,MarcaId,Modelo,Descripcion,Cantidad,Precio,FechaSalida,Estado,Tipo,TiendaId")] Periferico periferico)
         {
             if (id != periferico.ID)
@@ -153,6 +158,7 @@ namespace GameStore.Controllers
         }
 
         // GET: Perifericos/Delete/5
+        [Authorize]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -175,6 +181,7 @@ namespace GameStore.Controllers
         // POST: Perifericos/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var periferico = await _context.Perifericos.FindAsync(id);

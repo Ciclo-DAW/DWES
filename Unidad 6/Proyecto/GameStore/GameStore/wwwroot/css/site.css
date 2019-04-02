@@ -59,8 +59,9 @@ body {
     width: 100px;
 }
 
-.items__list{
+.items__list {
     display: flex;
+    margin-bottom: 20px;
 }
 
 .items__item{
@@ -109,4 +110,56 @@ body {
 
 .item__link{
     margin-left: 25px;
+}
+
+.productos__lista{
+    display: flex;
+}
+
+.productos__item {
+    flex-basis: calc(33% - 20px);
+    margin: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    font-size: 25px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: all .2s ease;
+}
+
+.productos__item:hover{
+    transform: scale(1.1);
+
+}
+
+.productos__link {
+    display: block;
+    width: 100%;
+    color: white;
+    padding: 30px 0;
+}
+
+.productos__link:hover{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.boton-normal{
+    background-color: dodgerblue;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.boton-normal:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.image__container img{
+    width: 100%;
 }

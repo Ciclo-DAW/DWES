@@ -1,7 +1,7 @@
 ﻿@model GameStore.Models.Juego
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "Eliminar juego";
 }
 
 <h1>@Html.DisplayFor(model => model.Nombre)  @Html.DisplayFor(model => model.Modelo)</h1>
@@ -69,7 +69,7 @@
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="ID" />
-        <input type="submit" value="Borrar" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
+        <input type="submit" value="Borrar" class="btn btn-danger" />
+        <a class="boton-normal" asp-action="Index">Volver a la lista de juegos</a>
     </form>
 </div>

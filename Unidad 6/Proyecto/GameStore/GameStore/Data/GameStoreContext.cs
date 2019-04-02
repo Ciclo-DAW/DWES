@@ -1,4 +1,6 @@
 ﻿using GameStore.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -7,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace GameStore.Data
 {
-    public class GameStoreContext : DbContext
+    public class GameStoreContext : IdentityDbContext<IdentityUser>
     {
         public GameStoreContext(DbContextOptions<GameStoreContext> options) :
         base(options){ }

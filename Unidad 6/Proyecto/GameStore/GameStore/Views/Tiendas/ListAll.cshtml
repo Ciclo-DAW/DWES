@@ -1,172 +1,122 @@
 ﻿@model TiendasViewModel
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
 
 @{
-    ViewData["Title"] = "ListAll";
+    ViewData["Title"] = "Todas las consolas";
 }
-
-
 
 @if (Model.Consolas != null)
 {
     <h1>Todas las consolas de @Html.DisplayFor(model => model.Consolas[0].Tienda.Nombre)</h1>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.Consolas[0].Marca.Nombre)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Consolas[0].Modelo)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Consolas[0].Precio)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Consolas[0].Tienda)
-                </th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
 
-            @foreach (var item in Model.Consolas)
-            {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Marca.Nombre)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Modelo)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Precio)
-                    </td>
-                    <td>
-                        <a href="http://@Html.DisplayFor(modelItem => item.Tienda.Direccion)">@Html.DisplayFor(modelItem => item.Tienda.Nombre)</a>
+    <div class="items__list">
+        @foreach (var item in Model.Consolas)
+        {
+            <div class="items__item">
+                <div class="item__container">
+                    <div class="item__image">
 
-                    </td>
-                    <td>
-                        <a asp-controller="Consolas" asp-action="ListAll" asp-route-id="@item.ID">Similares</a> |
-                        <a asp-controller="Consolas" asp-action="Details" asp-route-id="@item.ID">Detalles</a> |
-                        <a asp-controller="Consolas" asp-action="Edit" asp-route-id="@item.ID">Editar</a> |
-                        <a asp-controller="Consolas" asp-action="Delete" asp-route-id="@item.ID">Borrar</a>
-                    </td>
-                </tr>
-            }
-
-        </tbody>
-    </table>
-}
-
-@if (Model.Perifericos != null)
-{
-    <h1>Todos los Periféricos de @Html.DisplayFor(model => model.Perifericos[0].Tienda.Nombre)</h1>
-
-    <table class="table">
-        <thead>
-            <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.Perifericos[0].Marca.Nombre)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Perifericos[0].Modelo)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Perifericos[0].Tipo)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Perifericos[0].Precio)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Perifericos[0].Tienda)
-                </th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model.Perifericos)
-            {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Marca.Nombre)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Modelo)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Tipo)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Precio)
-                    </td>
-                    <td>
-                        <a href="http://@Html.DisplayFor(modelItem => item.Tienda.Direccion)">@Html.DisplayFor(modelItem => item.Tienda.Nombre)</a>
-                    </td>
-                    <td>
-                        <a asp-controller="Perifericos" asp-action="ListAll" asp-route-id="@item.ID">Similares</a> |
-                        <a asp-controller="Perifericos" asp-action="Details" asp-route-id="@item.ID">Detalles</a> |
-                        <a asp-controller="Perifericos" asp-action="Edit" asp-route-id="@item.ID">Editar</a> |
-                        <a asp-controller="Perifericos" asp-action="Delete" asp-route-id="@item.ID">Borrar</a>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
+                    </div>
+                    <div class="item__text">
+                        <div class="item__nombre">
+                            <h3 class="item__marca">@Html.DisplayFor(modelItem => item.Marca.Nombre)</h3>
+                            <h4 class="item__modelo">@Html.DisplayFor(modelItem => item.Modelo)</h4>
+                        </div>
+                        <span class="item__precio">@Html.DisplayFor(modelItem => item.Precio)€</span>
+                        <a class="item__link" href="http://@Html.DisplayFor(modelItem => item.Tienda.Direccion)">
+                            @Html.DisplayFor(modelItem => item.Tienda.Nombre)
+                        </a>
+                        <div class="item__links">
+                            <a class="boton-normal" asp-action="Details" asp-route-id="@item.ID">Detalles</a>
+                            @if (SignInManager.IsSignedIn(User))
+                            {
+                                <a class="boton-normal" asp-action="Edit" asp-route-id="@item.ID">Editar</a>
+                                <a class="boton-normal" asp-action="Delete" asp-route-id="@item.ID">Borrar</a>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
 }
 
 @if (Model.Juegos != null)
 {
     <h1>Todos los Juegos de @Html.DisplayFor(model => model.Juegos[0].Tienda.Nombre)</h1>
 
-    <table class="table">
-        <thead>
-            <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.Juegos[0].Nombre)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Juegos[0].Modelo)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Juegos[0].Precio)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Juegos[0].Genero)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Juegos[0].Tienda)
-                </th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model.Juegos)
-            {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Nombre)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Modelo)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Precio)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Genero)
-                    </td>
-                    <td>
-                        <a href="http://@Html.DisplayFor(modelItem => item.Tienda.Direccion)">@Html.DisplayFor(modelItem => item.Tienda.Nombre)</a>
-                    </td>
-                    <td>
-                        <a asp-controller="Juegos" asp-action="ListAll" asp-route-id="@item.ID">Similares</a> |
-                        <a asp-controller="Juegos" asp-action="Details" asp-route-id="@item.ID">Detalles</a> |
-                        <a asp-controller="Juegos" asp-action="Edit" asp-route-id="@item.ID">Editar</a> |
-                        <a asp-controller="Juegos" asp-action="Delete" asp-route-id="@item.ID">Borrar</a>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
+    <div class="items__list">
+        @foreach (var item in Model.Juegos)
+        {
+            <div class="items__item">
+                <div class="item__container">
+                    <div class="item__image">
+
+                    </div>
+                    <div class="item__text">
+                        <div class="item__nombre">
+                            <h3 class="item__marca">@Html.DisplayFor(modelItem => item.Nombre)</h3>
+                            <h4 class="item__modelo">@Html.DisplayFor(modelItem => item.Modelo)</h4>
+                        </div>
+                        <span class="item__precio">@Html.DisplayFor(modelItem => item.Precio)€</span>
+                        <a class="item__link" href="http://@Html.DisplayFor(modelItem => item.Tienda.Direccion)">
+                            @Html.DisplayFor(modelItem => item.Tienda.Nombre)
+                        </a>
+                        <div class="item__links">
+                            <a class="boton-normal" asp-action="Details" asp-route-id="@item.ID">Detalles</a>
+                            @if (SignInManager.IsSignedIn(User))
+                            {
+                                <a class="boton-normal" asp-action="Edit" asp-route-id="@item.ID">Editar</a>
+                                <a class="boton-normal" asp-action="Delete" asp-route-id="@item.ID">Borrar</a>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
 }
+
+@if (Model.Perifericos != null)
+{
+    <h1>Todos los Periféricos de @Html.DisplayFor(model => model.Perifericos[0].Tienda.Nombre)</h1>
+
+    <div class="items__list">
+        @foreach (var item in Model.Perifericos)
+        {
+            <div class="items__item">
+                <div class="item__container">
+                    <div class="item__image">
+
+                    </div>
+                    <div class="item__text">
+                        <div class="item__nombre">
+                            <h3 class="item__marca">@Html.DisplayFor(modelItem => item.Marca.Nombre)</h3>
+                            <h4 class="item__modelo">@Html.DisplayFor(modelItem => item.Modelo)</h4>
+                        </div>
+                        <span class="item__precio">@Html.DisplayFor(modelItem => item.Precio)€</span>
+                        <a class="item__link" href="http://@Html.DisplayFor(modelItem => item.Tienda.Direccion)">
+                            @Html.DisplayFor(modelItem => item.Tienda.Nombre)
+                        </a>
+                        <div class="item__links">
+                            <a class="boton-normal" asp-action="Details" asp-route-id="@item.ID">Detalles</a>
+                            @if (SignInManager.IsSignedIn(User))
+                            {
+                                <a class="boton-normal" asp-action="Edit" asp-route-id="@item.ID">Editar</a>
+                                <a class="boton-normal" asp-action="Delete" asp-route-id="@item.ID">Borrar</a>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+
+<div>
+    <a class="boton-normal" asp-action="Index">Volver a la lista de tiendas</a>
+</div>
 

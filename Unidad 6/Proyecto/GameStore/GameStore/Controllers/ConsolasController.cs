@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using GameStore.Data;
 using GameStore.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace GameStore.Controllers
 {
+    
     public class ConsolasController : Controller
     {
         private readonly GameStoreContext _context;
@@ -73,6 +75,7 @@ namespace GameStore.Controllers
         }
 
         // GET: Consolas/Create
+        [Authorize]
         public IActionResult Create()
         {
             ViewData["MarcaId"] = new SelectList(_context.Marca, "ID", "Nombre");
@@ -83,6 +86,7 @@ namespace GameStore.Controllers
         // POST: Consolas/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ID,MarcaId,Modelo,Descripcion,Cantidad,Precio,FechaSalida,Estado,TiendaId")] Consola consola)
@@ -99,6 +103,7 @@ namespace GameStore.Controllers
         }
 
         // GET: Consolas/Edit/5
+        [Authorize]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -119,6 +124,7 @@ namespace GameStore.Controllers
         // POST: Consolas/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("ID,MarcaId,Modelo,Descripcion,Cantidad,Precio,FechaSalida,Estado,TiendaId")] Consola consola)
@@ -154,6 +160,7 @@ namespace GameStore.Controllers
         }
 
         // GET: Consolas/Delete/5
+        [Authorize]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -174,6 +181,7 @@ namespace GameStore.Controllers
         }
 
         // POST: Consolas/Delete/5
+        [Authorize]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

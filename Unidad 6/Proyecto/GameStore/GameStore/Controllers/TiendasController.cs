@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using GameStore.Data;
 using GameStore.Models;
 using GameStore.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 
 namespace GameStore.Controllers
 {
@@ -87,6 +88,7 @@ namespace GameStore.Controllers
         //}
 
         // GET: Tiendas/Create
+        [Authorize]
         public IActionResult Create()
         {
             return View();
@@ -95,6 +97,7 @@ namespace GameStore.Controllers
         // POST: Tiendas/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ID,Nombre,Direccion")] Tienda tienda)
@@ -109,6 +112,7 @@ namespace GameStore.Controllers
         }
 
         // GET: Tiendas/Edit/5
+        [Authorize]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -127,6 +131,7 @@ namespace GameStore.Controllers
         // POST: Tiendas/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("ID,Nombre,Direccion")] Tienda tienda)
@@ -160,6 +165,7 @@ namespace GameStore.Controllers
         }
 
         // GET: Tiendas/Delete/5
+        [Authorize]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -180,6 +186,7 @@ namespace GameStore.Controllers
         // POST: Tiendas/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var tienda = await _context.Tienda.FindAsync(id);

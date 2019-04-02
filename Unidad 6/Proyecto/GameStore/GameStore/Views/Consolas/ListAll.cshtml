@@ -1,81 +1,45 @@
-﻿@model IEnumerable<GameStore.Models.Consola>
+﻿@model List<GameStore.Models.Consola>
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Todas las consolas";
 }
 
-<h1>Todas las del mismo tipo</h1>
+<h1>Todas las @Html.DisplayFor(model => model[0].Modelo)</h1>
 
+<div class="items__list">
+    @foreach (var item in Model)
+    {
+        <div class="items__item">
+            <div class="item__container">
+                <div class="item__image">
 
-    <table class="table">
-        <thead>
-            <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.Marca)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Modelo)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Descripcion)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Cantidad)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Precio)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.FechaSalida)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Estado)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Tienda)
-                </th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Marca.Nombre)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Modelo)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Descripcion)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Cantidad)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Precio)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.FechaSalida)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Estado)
-                    </td>
-                    <td>
-                        <a href="http://@Html.DisplayFor(modelItem => item.Tienda.Direccion)">@Html.DisplayFor(modelItem => item.Tienda.Nombre)</a>
+                </div>
+                <div class="item__text">
+                    <div class="item__nombre">
+                        <h3 class="item__marca">@Html.DisplayFor(modelItem => item.Marca.Nombre)</h3>
+                        <h4 class="item__modelo">@Html.DisplayFor(modelItem => item.Modelo)</h4>
+                    </div>
+                    <span class="item__precio">@Html.DisplayFor(modelItem => item.Precio)€</span>
+                    <a class="item__link" href="http://@Html.DisplayFor(modelItem => item.Tienda.Direccion)">
+                        @Html.DisplayFor(modelItem => item.Tienda.Nombre)
+                    </a>
+                    <div class="item__links">
+                        <a class="boton-normal" asp-action="Details" asp-route-id="@item.ID">Detalles</a>
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            <a class="boton-normal" asp-action="Edit" asp-route-id="@item.ID">Editar</a>
+                            <a class="boton-normal" asp-action="Delete" asp-route-id="@item.ID">Borrar</a>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
 
-                    </td>
-                    <td>
-                        <a asp-action="Edit" asp-route-id="@item.ID">Editar</a> |
-                        <a asp-action="Details" asp-route-id="@item.ID">Detalles</a> |
-                        <a asp-action="Delete" asp-route-id="@item.ID">Borrar</a>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
-
-<div>  
-    <a asp-action="Index">Volver a la lista de consolas</a>
+<div>
+    <a class="boton-normal" asp-action="Index">Volver a la lista de consolas</a>
 </div>

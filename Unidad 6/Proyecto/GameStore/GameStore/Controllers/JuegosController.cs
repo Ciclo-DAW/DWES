@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using GameStore.Data;
 using GameStore.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace GameStore.Controllers
 {
@@ -69,6 +70,7 @@ namespace GameStore.Controllers
         }
 
         // GET: Juegos/Create
+        [Authorize]
         public IActionResult Create()
         {
             ViewData["TiendaId"] = new SelectList(_context.Tienda, "ID", "Nombre");
@@ -78,6 +80,7 @@ namespace GameStore.Controllers
         // POST: Juegos/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ID,Nombre,Modelo,Descripcion,Cantidad,Precio,FechaSalida,Estado,Genero,TiendaId")] Juego juego)
@@ -93,6 +96,7 @@ namespace GameStore.Controllers
         }
 
         // GET: Juegos/Edit/5
+        [Authorize]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -112,6 +116,7 @@ namespace GameStore.Controllers
         // POST: Juegos/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("ID,Nombre,Modelo,Descripcion,Cantidad,Precio,FechaSalida,Estado,Genero,TiendaId")] Juego juego)
@@ -146,6 +151,7 @@ namespace GameStore.Controllers
         }
 
         // GET: Juegos/Delete/5
+        [Authorize]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -167,6 +173,7 @@ namespace GameStore.Controllers
         // POST: Juegos/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var juego = await _context.Juegos.FindAsync(id);

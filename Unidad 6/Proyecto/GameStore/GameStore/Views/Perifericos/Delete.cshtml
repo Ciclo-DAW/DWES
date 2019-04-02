@@ -1,7 +1,7 @@
 ﻿@model GameStore.Models.Periferico
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "Eliminar periférico";
 }
 
 <h3>¿Está seguro de querer eliminar este periférico?</h3>
@@ -68,6 +68,6 @@
     <form asp-action="Delete">
         <input type="hidden" asp-for="ID" />
         <input type="submit" value="Borrar" class="btn btn-danger" /> |
-        <a asp-action="Index">Volver a la lista de periféricos</a>
+        <a class="boton-normal" asp-action="Index">Volver a la lista de periféricos</a>
     </form>
 </div>
