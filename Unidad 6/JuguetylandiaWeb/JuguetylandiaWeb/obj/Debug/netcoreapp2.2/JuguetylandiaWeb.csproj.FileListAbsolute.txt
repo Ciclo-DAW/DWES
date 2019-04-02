@@ -1,0 +1,84 @@
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\bin\Debug\netcoreapp2.2\JuguetylandiaWeb.deps.json
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\bin\Debug\netcoreapp2.2\JuguetylandiaWeb.runtimeconfig.json
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\bin\Debug\netcoreapp2.2\JuguetylandiaWeb.runtimeconfig.dev.json
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\bin\Debug\netcoreapp2.2\JuguetylandiaWeb.dll
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\bin\Debug\netcoreapp2.2\JuguetylandiaWeb.pdb
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\bin\Debug\netcoreapp2.2\JuguetylandiaWeb.Views.dll
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\bin\Debug\netcoreapp2.2\JuguetylandiaWeb.Views.pdb
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\JuguetylandiaWeb.csproj.CoreCompileInputs.cache
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\JuguetylandiaWeb.RazorAssemblyInfo.cache
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\JuguetylandiaWeb.RazorAssemblyInfo.cs
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\JuguetylandiaWeb.AssemblyInfoInputs.cache
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\JuguetylandiaWeb.AssemblyInfo.cs
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\JuguetylandiaWeb.TagHelpers.input.cache
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\JuguetylandiaWeb.TagHelpers.output.cache
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\JuguetylandiaWeb.RazorCoreGenerate.cache
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\JuguetylandiaWeb.RazorTargetAssemblyInfo.cache
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\JuguetylandiaWeb.RazorTargetAssemblyInfo.cs
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\JuguetylandiaWeb.Views.pdb
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\JuguetylandiaWeb.dll
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\JuguetylandiaWeb.pdb
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\JuguetylandiaWeb.csproj.CopyComplete
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\JuguetylandiaWeb.csprojAssemblyReference.cache
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\Razor\Views\Marcas\Create.g.cshtml.cs
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\Razor\Views\Marcas\Delete.g.cshtml.cs
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\Razor\Views\Marcas\Edit.g.cshtml.cs
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\Razor\Views\Marcas\Index.g.cshtml.cs
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\Razor\Views\Tiendas\Create.g.cshtml.cs
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\Razor\Views\Tiendas\Delete.g.cshtml.cs
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\Razor\Views\Tiendas\Edit.g.cshtml.cs
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\Razor\Views\Tiendas\Index.g.cshtml.cs
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\Razor\Views\Inventario\Create.g.cshtml.cs
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\Razor\Views\Inventario\Delete.g.cshtml.cs
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\Razor\Views\Inventario\Details.g.cshtml.cs
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\Razor\Views\Inventario\Edit.g.cshtml.cs
+C:\DAW\segundo curso\Desenvolvemento web en contorno servidor\proyectos\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\Razor\Views\Inventario\Index.g.cshtml.cs
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\bin\Debug\netcoreapp2.2\JuguetylandiaWeb.deps.json
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\bin\Debug\netcoreapp2.2\JuguetylandiaWeb.runtimeconfig.json
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\bin\Debug\netcoreapp2.2\JuguetylandiaWeb.runtimeconfig.dev.json
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\bin\Debug\netcoreapp2.2\JuguetylandiaWeb.dll
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\bin\Debug\netcoreapp2.2\JuguetylandiaWeb.pdb
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\bin\Debug\netcoreapp2.2\JuguetylandiaWeb.Views.dll
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\bin\Debug\netcoreapp2.2\JuguetylandiaWeb.Views.pdb
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\JuguetylandiaWeb.csprojAssemblyReference.cache
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\JuguetylandiaWeb.csproj.CoreCompileInputs.cache
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\JuguetylandiaWeb.RazorAssemblyInfo.cache
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\JuguetylandiaWeb.RazorAssemblyInfo.cs
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\JuguetylandiaWeb.AssemblyInfoInputs.cache
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\JuguetylandiaWeb.AssemblyInfo.cs
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\JuguetylandiaWeb.TagHelpers.input.cache
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\JuguetylandiaWeb.TagHelpers.output.cache
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\JuguetylandiaWeb.RazorCoreGenerate.cache
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\Razor\Views\Inventario\Create.g.cshtml.cs
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\Razor\Views\Inventario\Delete.g.cshtml.cs
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\Razor\Views\Inventario\Details.g.cshtml.cs
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\Razor\Views\Inventario\Edit.g.cshtml.cs
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\Razor\Views\Inventario\Index.g.cshtml.cs
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\Razor\Views\Marcas\Create.g.cshtml.cs
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\Razor\Views\Marcas\Delete.g.cshtml.cs
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\Razor\Views\Marcas\Edit.g.cshtml.cs
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\Razor\Views\Marcas\Index.g.cshtml.cs
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\Razor\Views\Tiendas\Create.g.cshtml.cs
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\Razor\Views\Tiendas\Delete.g.cshtml.cs
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\Razor\Views\Tiendas\Edit.g.cshtml.cs
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\Razor\Views\Tiendas\Index.g.cshtml.cs
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\JuguetylandiaWeb.RazorTargetAssemblyInfo.cache
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\JuguetylandiaWeb.RazorTargetAssemblyInfo.cs
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\JuguetylandiaWeb.Views.pdb
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\JuguetylandiaWeb.dll
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\JuguetylandiaWeb.pdb
+D:\Documentos\FP\DWES\Unidad 6\JuguetylandiaWeb\JuguetylandiaWeb\obj\Debug\netcoreapp2.2\JuguetylandiaWeb.csproj.CopyComplete

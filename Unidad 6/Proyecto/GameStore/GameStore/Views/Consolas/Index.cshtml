@@ -1,0 +1,44 @@
+﻿@model IEnumerable<GameStore.Models.Consola>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Consolas</h1>
+
+<p>
+    <a asp-action="Create">Añadir Nueva</a>
+</p>
+
+<div class="items__list">
+    @foreach (var item in Model)
+    {
+        <div class="items__item">
+            <div class="item__container">
+                <div class="item__image">
+
+                </div>
+                    <div class="item__text">
+                        <div class="item__nombre">
+                            <h3 class="item__marca">@Html.DisplayFor(modelItem => item.Marca.Nombre)</h3>
+                            <h4 class="item__modelo">@Html.DisplayFor(modelItem => item.Modelo)</h4>
+                        </div>
+                        <span class="item__precio">@Html.DisplayFor(modelItem => item.Precio)€</span>
+                        <a class="item__link" href="http://@Html.DisplayFor(modelItem => item.Tienda.Direccion)">
+                            @Html.DisplayFor(modelItem => item.Tienda.Nombre)
+                    </a>
+                    <div class="item__links">
+                        <a asp-action="Edit" asp-route-id="@item.ID">Editar</a> 
+                        <a asp-action="ListAll" asp-route-id="@item.ID">Similares</a> 
+                        <a asp-action="Details" asp-route-id="@item.ID">Detalles</a> 
+                        <a asp-action="Delete" asp-route-id="@item.ID">Borrar</a>
+                    </div>
+                </div>
+            </div>
+        </div>                
+    }
+</div>
+
+<div>
+    <a asp-controller="Productos" asp-action="Index">Volver a la lista de productos</a>
+</div>

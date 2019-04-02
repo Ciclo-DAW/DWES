@@ -1,0 +1,82 @@
+﻿@model NuevoLibroViewModel
+@{
+    ViewData["Title"] = "Libros"; }
+<br />
+<h4>Nuevo libro</h4>
+<hr />
+<form asp-action="Index">
+    <div class="form-group row">
+        <label asp-for="NuevoLibro.Titulo"
+               class="col-sm-1 col-form-label">Título</label>
+        <div class="col-sm-8">
+            <input asp-for="NuevoLibro.Titulo" class="form-control">
+        </div>
+        <span asp-validation-for="NuevoLibro.Titulo"
+              class="col-sm-3 text-danger"></span>
+    </div>
+    <div class="form-group row">
+        <label asp-for="NuevoLibro.ISBN"
+               class="col-sm-1 col-form-label">ISBN</label>
+        <div class="col-sm-8">
+            <input asp-for="NuevoLibro.ISBN" class="form-control">
+        </div>
+        <span asp-validation-for="NuevoLibro.ISBN"
+              class="col-sm-3 text-danger"></span>
+    </div>
+    <div class="form-group row">
+        <label asp-for="NuevoLibro.FechaPublicacion"
+               class="col-sm-1 col-form-label">Fecha</label>
+        <div class="col-sm-8">
+            <input asp-for="NuevoLibro.FechaPublicacion"
+                   class="form-control" type="date">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="NuevoLibro.AutorId"
+               class="col-sm-1 col-form-label">Autor</label>
+        <div class="col-sm-8">
+            <select asp-for="NuevoLibro.AutorId"
+                    class="form-control" asp-items="ViewBag.AutorId"></select>
+        </div>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Añadir libro" class="btn btn-primary" />
+    </div>
+</form>
+<br />
+<hr />
+<h4>Libros en la colección</h4>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Título
+            </th>
+            <th>
+                Autor
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Libros)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Titulo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Autor.NombreCompleto)
+                </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.Id">
+                        <i class="fas fa-search" title="Detalle"></i>
+                    </a> | <a asp-action="Delete" asp-route-id="@item.Id">
+                        <i class="fas fa-trash-alt" title="Eliminar"></i>
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@section Scripts { @{await Html.RenderPartialAsync("_ValidationScriptsPartial");} }

@@ -1,0 +1,40 @@
+﻿@model Libros.Models.Libro
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div>
+    <br />
+    <h4>Información del libro</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-1">
+            Título
+        </dt>
+        <dd class="col-sm-11">
+            @Html.DisplayFor(model => model.Titulo)
+        </dd>
+        <dt class="col-sm-1">
+            ISBN
+        </dt>
+        <dd class="col-sm-11">
+            @Html.DisplayFor(model => model.ISBN)
+        </dd>
+        <dt class="col-sm-1">
+            Fecha
+        </dt>
+        <dd class="col-sm-11">
+            @Model.FechaPublicacion.ToShortDateString()
+        </dd>
+        <dt class="col-sm-1">
+            Autor
+        </dt>
+        <dd class="col-sm-11">
+            @Html.DisplayFor(model => model.Autor.NombreCompleto)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Index"><i class="fas fa-undo-alt"></i> Volver a lista de libros</a>
+</div>

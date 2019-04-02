@@ -1,0 +1,42 @@
+﻿@model IEnumerable<JuguetylandiaWeb.Models.Marca>
+
+@{
+    ViewData["Title"] = "Lista de marcas";
+}
+
+<h1>Lista de marcas</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-success addButton">
+        <i class="fas fa-plus-circle"></i>   Crear nueva marca
+    </a>
+
+</p>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nombre)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-warning editButton">
+                        <i class="fas fa-edit"></i>
+                    </a>
+                    <a asp-action="Delete" asp-route-id="@item.ID" class="btn btn-danger">
+                        <i class="fas fa-trash-alt" title="Eliminar"> </i>
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,27 @@
+﻿@model GameStore.Models.Marca
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>@Html.DisplayFor(model => model.Nombre)</h1>
+
+<h3>¿Está seguro de que quiere eliminar esta marca?</h3>
+<div>
+    <h4>Marca</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ID" />
+        <input type="submit" value="Borrar" class="btn btn-danger" /> |
+        <a asp-action="Index">Volver a la lista de marcas</a>
+    </form>
+</div>
