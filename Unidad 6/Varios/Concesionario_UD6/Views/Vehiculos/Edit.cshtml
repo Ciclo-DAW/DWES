@@ -1,0 +1,80 @@
+﻿@model Concesionario_UD6.Models.Vehiculo
+
+@{
+    ViewData["Title"] = "Editar vehículo";
+}
+
+<h4>Editar Vehículo</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <a asp-action="Index"> <i class="fas fa-chevron-left"></i> Voltar</a>
+        <hr />
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ID" />
+            <div class="form-group">
+                <label asp-for="Marca" class="control-label"></label>
+                <input asp-for="Marca" class="form-control" />
+                <span asp-validation-for="Marca" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Modelo" class="control-label"></label>
+                <input asp-for="Modelo" class="form-control" />
+                <span asp-validation-for="Modelo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TipoVehiculo" class="control-label"></label>
+                <select asp-for="TipoVehiculo" class="form-control" asp-items="Html.GetEnumSelectList<TiposVehiculo>()"></select>
+                <span asp-validation-for="TipoVehiculo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Combustible" class="control-label"></label>
+                <select asp-for="Combustible" class="form-control" asp-items="Html.GetEnumSelectList<Combustibles>()"></select>
+                <span asp-validation-for="Combustible" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Estado" class="control-label"></label>
+                <select asp-for="Estado" class="form-control" asp-items="Html.GetEnumSelectList<Estados>()"></select>
+                <span asp-validation-for="Estado" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Descripcion" class="control-label"></label>
+                <input asp-for="Descripcion" class="form-control" />
+                <span asp-validation-for="Descripcion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumBastidor" class="control-label"></label>
+                <input asp-for="NumBastidor" class="form-control" />
+                <span asp-validation-for="NumBastidor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataRecepcion" class="control-label"></label>
+                <input asp-for="DataRecepcion" class="form-control" />
+                <span asp-validation-for="DataRecepcion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataVenta" class="control-label"></label>
+                <input asp-for="DataVenta" class="form-control" />
+                <span asp-validation-for="DataVenta" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ConcesionarioId" class="control-label"></label>
+                <select asp-for="ConcesionarioId" class="form-control" asp-items="ViewBag.ConcesionarioId"></select>
+                <span asp-validation-for="ConcesionarioId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UbicacionId" class="control-label"></label>
+                <select asp-for="UbicacionId" class="form-control" asp-items="ViewBag.UbicacionId"></select>
+                <span asp-validation-for="UbicacionId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Gardar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Concesionario_UD6", "Concesionario_UD6\Concesionario_UD6.csproj", "{EF702810-73AC-4E0D-B46F-8E6BBD88AC5C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF702810-73AC-4E0D-B46F-8E6BBD88AC5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF702810-73AC-4E0D-B46F-8E6BBD88AC5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF702810-73AC-4E0D-B46F-8E6BBD88AC5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF702810-73AC-4E0D-B46F-8E6BBD88AC5C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9D864C5-6D41-488D-AE16-AF357C450E4F}
+	EndGlobalSection
+EndGlobal

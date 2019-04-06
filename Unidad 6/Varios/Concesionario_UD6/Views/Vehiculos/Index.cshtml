@@ -1,0 +1,85 @@
+﻿@model IEnumerable<Concesionario_UD6.Models.Vehiculo>
+
+@{
+    ViewData["Title"] = "Vehículos";
+}
+
+@section scripts {
+    <script type="text/javascript"
+            src="https://cdn.datatables.net/v/bs4/dt-1.10.18/datatables.min.js">
+    </script>
+    <script type="text/javascript">
+$(document).ready(function () {
+$('#vehiculos-table').DataTable({
+language: {
+"sProcessing": "Procesando...",
+"sLengthMenu": "Amosar _MENU_ rexistros",
+"sZeroRecords": "Non se atoparon resultados",
+"sEmptyTable": "Non hai ningún dato dispoñible nesta táboa",
+"sInfo": "Amosando rexistros do _START_ ó _END_ dun total de _TOTAL_ rexistros",
+"sInfoEmpty": "Amosando rexistros do 0 ó 0 dun total de 0 rexistros",
+"sInfoFiltered": "(filtrado dun total de _MAX_ registros)",
+"sInfoPostFix": "",
+"sSearch": "Búsqueda:",
+"sUrl": "",
+"sInfoThousands": ",",
+"sLoadingRecords": "Cargando...",
+"oPaginate": {
+"sFirst": "Primeiro",
+"sLast": "Último",
+"sNext": "Seguinte",
+"sPrevious": "Previa"
+},
+"oAria": {
+"sSortAscending": ": Activa para ordear a columna de maneira ascendente",
+"sSortDescending": ": Activa para ordear a columna de maneira descendente"
+}
+}
+}
+);
+});
+    </script> 
+}
+
+<h3>Vehículos en stock</h3>
+
+<p>
+    <a asp-action="Create">Alta de vehículo</a>
+</p>
+<table id="vehiculos-table" class="table table-striped table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Marca)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Modelo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Estado)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Marca)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Modelo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Estado)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ID"><i class="fas fa-edit"></i>Editar</a> |
+                    <a asp-action="Details" asp-route-id="@item.ID"><i class="fas fa-info-circle"></i> Información</a> |
+                    <a asp-action="Delete" asp-route-id="@item.ID"><i class="fas fa-trash-alt"></i>Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

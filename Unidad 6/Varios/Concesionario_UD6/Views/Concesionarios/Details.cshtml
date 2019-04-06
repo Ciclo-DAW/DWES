@@ -1,0 +1,35 @@
+﻿@model Concesionario_UD6.Models.Concesionario
+
+@{
+    ViewData["Title"] = "Datos concesionarios";
+}
+
+<h4>Datos Concesionario</h4>
+<hr />
+<div>
+    <a asp-action="Index"> <i class="fas fa-chevron-left"></i> Voltar</a>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Direccion)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Direccion)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Telefono)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Telefono)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID"><i class="fa fa-edit" title="Editar"></i> Editar datos</a>
+</div>

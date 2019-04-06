@@ -1,0 +1,84 @@
+﻿@model Concesionario_UD6.Models.Vehiculo
+
+@{
+    ViewData["Title"] = "Eliminar vehículo";
+}
+
+<h4>Eliminar vehículo</h4>
+<div>
+    <a asp-action="Index"> <i class="fas fa-chevron-left"></i> Voltar</a>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Marca)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Marca)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Modelo)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Modelo)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TipoVehiculo)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TipoVehiculo)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Combustible)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Combustible)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Estado)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NumBastidor)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NumBastidor)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DataRecepcion)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DataRecepcion)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DataVenta)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DataVenta)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Concesionario)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Concesionario.Nome)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Ubicacion)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Ubicacion.Nome)
+        </dd>
+    </dl>
+    <h4>Estás seguro que desexa eliminar o vehículo?</h4>
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ID" />
+        <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+    </form>
+</div>
