@@ -1,0 +1,14 @@
+D:\Documentos\FP\DWES\Unidad 7\TodoApi\TodoApi\TodoApi\bin\Debug\netcoreapp2.2\TodoApi.deps.json
+D:\Documentos\FP\DWES\Unidad 7\TodoApi\TodoApi\TodoApi\bin\Debug\netcoreapp2.2\TodoApi.runtimeconfig.json
+D:\Documentos\FP\DWES\Unidad 7\TodoApi\TodoApi\TodoApi\bin\Debug\netcoreapp2.2\TodoApi.runtimeconfig.dev.json
+D:\Documentos\FP\DWES\Unidad 7\TodoApi\TodoApi\TodoApi\bin\Debug\netcoreapp2.2\TodoApi.dll
+D:\Documentos\FP\DWES\Unidad 7\TodoApi\TodoApi\TodoApi\bin\Debug\netcoreapp2.2\TodoApi.pdb
+D:\Documentos\FP\DWES\Unidad 7\TodoApi\TodoApi\TodoApi\obj\Debug\netcoreapp2.2\TodoApi.csprojAssemblyReference.cache
+D:\Documentos\FP\DWES\Unidad 7\TodoApi\TodoApi\TodoApi\obj\Debug\netcoreapp2.2\TodoApi.csproj.CoreCompileInputs.cache
+D:\Documentos\FP\DWES\Unidad 7\TodoApi\TodoApi\TodoApi\obj\Debug\netcoreapp2.2\TodoApi.RazorAssemblyInfo.cache
+D:\Documentos\FP\DWES\Unidad 7\TodoApi\TodoApi\TodoApi\obj\Debug\netcoreapp2.2\TodoApi.RazorAssemblyInfo.cs
+D:\Documentos\FP\DWES\Unidad 7\TodoApi\TodoApi\TodoApi\obj\Debug\netcoreapp2.2\TodoApi.AssemblyInfoInputs.cache
+D:\Documentos\FP\DWES\Unidad 7\TodoApi\TodoApi\TodoApi\obj\Debug\netcoreapp2.2\TodoApi.AssemblyInfo.cs
+D:\Documentos\FP\DWES\Unidad 7\TodoApi\TodoApi\TodoApi\obj\Debug\netcoreapp2.2\TodoApi.RazorTargetAssemblyInfo.cache
+D:\Documentos\FP\DWES\Unidad 7\TodoApi\TodoApi\TodoApi\obj\Debug\netcoreapp2.2\TodoApi.dll
+D:\Documentos\FP\DWES\Unidad 7\TodoApi\TodoApi\TodoApi\obj\Debug\netcoreapp2.2\TodoApi.pdb
