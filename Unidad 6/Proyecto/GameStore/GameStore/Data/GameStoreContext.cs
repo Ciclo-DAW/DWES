@@ -17,7 +17,7 @@ namespace GameStore.Data
         public DbSet<Consola> Consolas { get; set; }
         public DbSet<Juego> Juegos { get; set; }
         public DbSet<Periferico> Perifericos { get; set; }
-        public DbSet<GameStore.Models.Marca> Marca { get; set; }
-        public DbSet<GameStore.Models.Tienda> Tienda { get; set; }
+        public DbSet<Marca> Marca { get; set; }
+        public DbSet<Tienda> Tienda { get; set; }
     }
 }

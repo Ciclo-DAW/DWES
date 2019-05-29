@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using TodoApi.Data;
 using TodoApi.Models;
 
@@ -33,9 +34,10 @@ namespace TodoApi.Controllers
         {
             return _context.Tareas.ToList();
         }
+
         // GET: api/Todo/5
         [HttpGet("{id}")]
-        public ActionResult<Tarea> GetTodoItem(long id)
+        public ActionResult<Tarea> GetTodoItem(int id)
         {
             var todoItem = _context.Tareas.Find(id);
             if (todoItem == null)
@@ -43,6 +45,42 @@ namespace TodoApi.Controllers
                 return NotFound();
             }
             return todoItem;
+        }
+
+        // POST: api/Todo
+        [HttpPost]
+        public ActionResult<Tarea> PostTodoItem(Tarea item)
+        {
+            _context.Tareas.Add(item);
+            _context.SaveChanges();
+            return CreatedAtAction(nameof(GetTodoItem), new { id = item.Id }, item);
+        }
+
+        // PUT: api/Todo/5
+        [HttpPut("{id}")]
+        public IActionResult PutTodoItem(int id, Tarea item)
+        {
+            if (id != item.Id)
+            {
+                return BadRequest();
+            }
+            _context.Entry(item).State = EntityState.Modified;
+            _context.SaveChanges();
+            return NoContent();
+        }
+
+        // DELETE: api/Todo/5
+        [HttpDelete("{id}")]
+        public IActionResult DeleteTodoItem(int id)
+        {
+            var todoItem = _context.Tareas.Find(id);
+            if (todoItem == null)
+            {
+                return NotFound();
+            }
+            _context.Tareas.Remove(todoItem);
+            _context.SaveChanges();
+            return NoContent();
         }
     }
 }

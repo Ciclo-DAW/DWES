@@ -4,12 +4,15 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Swashbuckle.AspNetCore.Swagger;
+using TodoApi.Data;
 
 namespace TodoApi
 {
@@ -27,10 +30,21 @@ namespace TodoApi
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
-            services.AddDbContext<Data.TodoApiContext>(opt => opt.UseInMemoryDatabase("TodoList"));
+            // Register the Swagger generator, defining 1 or more Swagger documents
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info { Title = "Todo API", Version = "v1" });
+            });
 
-            //services.AddDbContext<Data.TodoApiContext>(options =>
-            //    options.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=TodoList;Trusted_Connection=True;MultipleActiveResultSets=true"));
+            //services.AddDbContext<Data.TodoApiContext>(opt => opt.UseInMemoryDatabase("TodoList"));
+
+            services.AddDbContext<Data.TodoApiContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("TodoApiContext")));
+
+            services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddEntityFrameworkStores<TodoApiContext>()
+                .AddDefaultTokenProviders();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,6 +56,16 @@ namespace TodoApi
             }
 
             app.UseMvc();
+            app.UseAuthentication();
+
+            // Enable middleware to serve generated Swagger as a JSON endpoint.
+            app.UseSwagger();
+            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.),
+            // specifying the Swagger JSON endpoint.
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+            });
         }
     }
 }
