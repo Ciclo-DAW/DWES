@@ -32,7 +32,13 @@ namespace GameStoreApi.Controllers
         [HttpGet("{id}")]
         public ActionResult<Consola> GetConsolaItem(int id)
         {
-            var consolaItem = _context.Consolas.Find(id);
+            //var consolaItem = _context.Consolas.Find(id);
+            var consolaItem = _context.Consolas
+                .Include(c => c.Marca)
+                    .ThenInclude(m => m.Perifericos)
+                .Include(c => c.Tienda)
+                    .ThenInclude(t => t.Consolas)
+                .FirstOrDefault(m => m.ID == id);
             if (consolaItem == null)
             {
                 return NotFound();

@@ -32,7 +32,16 @@ namespace GameStoreApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            //Evitar referencias circulares
+            services.AddMvc().AddJsonOptions(options =>
+            {
+                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+            });
+
+            //Contexto de datos
             services.AddDbContext<GameStoreApiContext>(options => options.UseSqlServer(Configuration.GetConnectionString("GameStoreApiContext")));
+
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
             {

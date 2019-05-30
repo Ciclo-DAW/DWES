@@ -13060,11 +13060,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documentos\\FP\\DWES\\Unidad 7\\Proyecto\\GameStoreApi\\GameStoreApi\\GameStoreApi\\GameStoreApi.csproj",
+      "projectUniqueName": "D:\\Documentos\\FP\\DWES\\Unidad 7\\Proyecto\\GameStoreApi\\GameStoreApi\\GameStoreApi.csproj",
       "projectName": "GameStoreApi",
-      "projectPath": "D:\\Documentos\\FP\\DWES\\Unidad 7\\Proyecto\\GameStoreApi\\GameStoreApi\\GameStoreApi\\GameStoreApi.csproj",
+      "projectPath": "D:\\Documentos\\FP\\DWES\\Unidad 7\\Proyecto\\GameStoreApi\\GameStoreApi\\GameStoreApi.csproj",
       "packagesPath": "C:\\Users\\Brais\\.nuget\\packages\\",
-      "outputPath": "D:\\Documentos\\FP\\DWES\\Unidad 7\\Proyecto\\GameStoreApi\\GameStoreApi\\GameStoreApi\\obj\\",
+      "outputPath": "D:\\Documentos\\FP\\DWES\\Unidad 7\\Proyecto\\GameStoreApi\\GameStoreApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

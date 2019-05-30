@@ -23,7 +23,6 @@ namespace GameStoreApi.Controllers
         }
         // GET: api/tiendas
         [HttpGet]
-        [Authorize]
         public ActionResult<IEnumerable<Tienda>> GetTiendaItems()
         {
             return _context.Tienda.ToList();
