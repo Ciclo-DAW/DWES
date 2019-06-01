@@ -1,0 +1,122 @@
+﻿@model TiendasViewModel
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@{
+    ViewData["Title"] = "Todas las consolas";
+}
+
+@if (Model.Consolas != null)
+{
+    <h1>Todas las consolas de @Html.DisplayFor(model => model.Consolas[0].Tienda.Nombre)</h1>
+
+    <div class="items__list">
+        @foreach (var item in Model.Consolas)
+        {
+            <div class="items__item">
+                <div class="item__container">
+                    <div class="item__image">
+
+                    </div>
+                    <div class="item__text">
+                        <div class="item__nombre">
+                            <h3 class="item__marca">@Html.DisplayFor(modelItem => item.Marca.Nombre)</h3>
+                            <h4 class="item__modelo">@Html.DisplayFor(modelItem => item.Modelo)</h4>
+                        </div>
+                        <span class="item__precio">@Html.DisplayFor(modelItem => item.Precio)€</span>
+                        <a class="item__link" href="http://@Html.DisplayFor(modelItem => item.Tienda.Direccion)">
+                            @Html.DisplayFor(modelItem => item.Tienda.Nombre)
+                        </a>
+                        <div class="item__links">
+                            <a class="boton-normal" asp-action="Details" asp-route-id="@item.ID">Detalles</a>
+                            @if (SignInManager.IsSignedIn(User))
+                            {
+                                <a class="boton-normal" asp-action="Edit" asp-route-id="@item.ID">Editar</a>
+                                <a class="boton-normal" asp-action="Delete" asp-route-id="@item.ID">Borrar</a>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+@if (Model.Juegos != null)
+{
+    <h1>Todos los Juegos de @Html.DisplayFor(model => model.Juegos[0].Tienda.Nombre)</h1>
+
+    <div class="items__list">
+        @foreach (var item in Model.Juegos)
+        {
+            <div class="items__item">
+                <div class="item__container">
+                    <div class="item__image">
+
+                    </div>
+                    <div class="item__text">
+                        <div class="item__nombre">
+                            <h3 class="item__marca">@Html.DisplayFor(modelItem => item.Nombre)</h3>
+                            <h4 class="item__modelo">@Html.DisplayFor(modelItem => item.Modelo)</h4>
+                        </div>
+                        <span class="item__precio">@Html.DisplayFor(modelItem => item.Precio)€</span>
+                        <a class="item__link" href="http://@Html.DisplayFor(modelItem => item.Tienda.Direccion)">
+                            @Html.DisplayFor(modelItem => item.Tienda.Nombre)
+                        </a>
+                        <div class="item__links">
+                            <a class="boton-normal" asp-action="Details" asp-route-id="@item.ID">Detalles</a>
+                            @if (SignInManager.IsSignedIn(User))
+                            {
+                                <a class="boton-normal" asp-action="Edit" asp-route-id="@item.ID">Editar</a>
+                                <a class="boton-normal" asp-action="Delete" asp-route-id="@item.ID">Borrar</a>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+@if (Model.Perifericos != null)
+{
+    <h1>Todos los Periféricos de @Html.DisplayFor(model => model.Perifericos[0].Tienda.Nombre)</h1>
+
+    <div class="items__list">
+        @foreach (var item in Model.Perifericos)
+        {
+            <div class="items__item">
+                <div class="item__container">
+                    <div class="item__image">
+
+                    </div>
+                    <div class="item__text">
+                        <div class="item__nombre">
+                            <h3 class="item__marca">@Html.DisplayFor(modelItem => item.Marca.Nombre)</h3>
+                            <h4 class="item__modelo">@Html.DisplayFor(modelItem => item.Modelo)</h4>
+                        </div>
+                        <span class="item__precio">@Html.DisplayFor(modelItem => item.Precio)€</span>
+                        <a class="item__link" href="http://@Html.DisplayFor(modelItem => item.Tienda.Direccion)">
+                            @Html.DisplayFor(modelItem => item.Tienda.Nombre)
+                        </a>
+                        <div class="item__links">
+                            <a class="boton-normal" asp-action="Details" asp-route-id="@item.ID">Detalles</a>
+                            @if (SignInManager.IsSignedIn(User))
+                            {
+                                <a class="boton-normal" asp-action="Edit" asp-route-id="@item.ID">Editar</a>
+                                <a class="boton-normal" asp-action="Delete" asp-route-id="@item.ID">Borrar</a>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+
+<div>
+    <a class="boton-normal" asp-action="Index">Volver a la lista de tiendas</a>
+</div>
+

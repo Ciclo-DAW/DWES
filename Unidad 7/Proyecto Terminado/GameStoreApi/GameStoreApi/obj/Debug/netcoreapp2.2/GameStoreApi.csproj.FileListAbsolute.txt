@@ -1,0 +1,28 @@
+D:\Documentos\FP\DWES\Unidad 7\Proyecto\GameStoreApi\GameStoreApi\GameStoreApi\bin\Debug\netcoreapp2.2\GameStoreApi.deps.json
+D:\Documentos\FP\DWES\Unidad 7\Proyecto\GameStoreApi\GameStoreApi\GameStoreApi\bin\Debug\netcoreapp2.2\GameStoreApi.runtimeconfig.json
+D:\Documentos\FP\DWES\Unidad 7\Proyecto\GameStoreApi\GameStoreApi\GameStoreApi\bin\Debug\netcoreapp2.2\GameStoreApi.runtimeconfig.dev.json
+D:\Documentos\FP\DWES\Unidad 7\Proyecto\GameStoreApi\GameStoreApi\GameStoreApi\bin\Debug\netcoreapp2.2\GameStoreApi.dll
+D:\Documentos\FP\DWES\Unidad 7\Proyecto\GameStoreApi\GameStoreApi\GameStoreApi\bin\Debug\netcoreapp2.2\GameStoreApi.pdb
+D:\Documentos\FP\DWES\Unidad 7\Proyecto\GameStoreApi\GameStoreApi\GameStoreApi\obj\Debug\netcoreapp2.2\GameStoreApi.csprojAssemblyReference.cache
+D:\Documentos\FP\DWES\Unidad 7\Proyecto\GameStoreApi\GameStoreApi\GameStoreApi\obj\Debug\netcoreapp2.2\GameStoreApi.csproj.CoreCompileInputs.cache
+D:\Documentos\FP\DWES\Unidad 7\Proyecto\GameStoreApi\GameStoreApi\GameStoreApi\obj\Debug\netcoreapp2.2\GameStoreApi.RazorAssemblyInfo.cache
+D:\Documentos\FP\DWES\Unidad 7\Proyecto\GameStoreApi\GameStoreApi\GameStoreApi\obj\Debug\netcoreapp2.2\GameStoreApi.RazorAssemblyInfo.cs
+D:\Documentos\FP\DWES\Unidad 7\Proyecto\GameStoreApi\GameStoreApi\GameStoreApi\obj\Debug\netcoreapp2.2\GameStoreApi.AssemblyInfoInputs.cache
+D:\Documentos\FP\DWES\Unidad 7\Proyecto\GameStoreApi\GameStoreApi\GameStoreApi\obj\Debug\netcoreapp2.2\GameStoreApi.AssemblyInfo.cs
+D:\Documentos\FP\DWES\Unidad 7\Proyecto\GameStoreApi\GameStoreApi\GameStoreApi\obj\Debug\netcoreapp2.2\GameStoreApi.RazorTargetAssemblyInfo.cache
+D:\Documentos\FP\DWES\Unidad 7\Proyecto\GameStoreApi\GameStoreApi\GameStoreApi\obj\Debug\netcoreapp2.2\GameStoreApi.dll
+D:\Documentos\FP\DWES\Unidad 7\Proyecto\GameStoreApi\GameStoreApi\GameStoreApi\obj\Debug\netcoreapp2.2\GameStoreApi.pdb
+C:\Users\Brais\Desktop\GameStoreApi\GameStoreApi\bin\Debug\netcoreapp2.2\GameStoreApi.deps.json
+C:\Users\Brais\Desktop\GameStoreApi\GameStoreApi\bin\Debug\netcoreapp2.2\GameStoreApi.runtimeconfig.json
+C:\Users\Brais\Desktop\GameStoreApi\GameStoreApi\bin\Debug\netcoreapp2.2\GameStoreApi.runtimeconfig.dev.json
+C:\Users\Brais\Desktop\GameStoreApi\GameStoreApi\bin\Debug\netcoreapp2.2\GameStoreApi.dll
+C:\Users\Brais\Desktop\GameStoreApi\GameStoreApi\bin\Debug\netcoreapp2.2\GameStoreApi.pdb
+C:\Users\Brais\Desktop\GameStoreApi\GameStoreApi\obj\Debug\netcoreapp2.2\GameStoreApi.csprojAssemblyReference.cache
+C:\Users\Brais\Desktop\GameStoreApi\GameStoreApi\obj\Debug\netcoreapp2.2\GameStoreApi.csproj.CoreCompileInputs.cache
+C:\Users\Brais\Desktop\GameStoreApi\GameStoreApi\obj\Debug\netcoreapp2.2\GameStoreApi.RazorAssemblyInfo.cache
+C:\Users\Brais\Desktop\GameStoreApi\GameStoreApi\obj\Debug\netcoreapp2.2\GameStoreApi.RazorAssemblyInfo.cs
+C:\Users\Brais\Desktop\GameStoreApi\GameStoreApi\obj\Debug\netcoreapp2.2\GameStoreApi.AssemblyInfoInputs.cache
+C:\Users\Brais\Desktop\GameStoreApi\GameStoreApi\obj\Debug\netcoreapp2.2\GameStoreApi.AssemblyInfo.cs
+C:\Users\Brais\Desktop\GameStoreApi\GameStoreApi\obj\Debug\netcoreapp2.2\GameStoreApi.RazorTargetAssemblyInfo.cache
+C:\Users\Brais\Desktop\GameStoreApi\GameStoreApi\obj\Debug\netcoreapp2.2\GameStoreApi.dll
+C:\Users\Brais\Desktop\GameStoreApi\GameStoreApi\obj\Debug\netcoreapp2.2\GameStoreApi.pdb

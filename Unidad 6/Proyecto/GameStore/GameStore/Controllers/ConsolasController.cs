@@ -42,9 +42,10 @@ namespace GameStore.Controllers
                 .FirstOrDefaultAsync(m => m.ID == id);
 
             var resultados = await _context.Consolas
-                .Include(c => c.Marca)
-                .Include(c => c.Tienda)
-                .Where(m => m.Modelo == consola.Modelo).ToListAsync(); //Devolver todos los resultados en los que el modelo es igual al modelo de la actual
+                //.Include(c => c.Marca)
+                //.Include(c => c.Tienda)
+                .Where(m => m.Modelo == consola.Modelo)
+                .ToListAsync(); //Devolver todos los resultados en los que el modelo es igual al modelo de la actual
             
             if (consola == null)
             {

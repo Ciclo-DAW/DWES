@@ -1,0 +1,51 @@
+﻿@model IEnumerable<GameStore.Models.Juego>
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+@{
+    ViewData["Title"] = "Juegos";
+}
+
+<h1>Juegos</h1>
+@if (SignInManager.IsSignedIn(User))
+{
+    <p>
+        <a class="boton-normal" asp-action="Create">Añadir Nuevo</a>
+    </p>
+}
+
+<div class="items__list">
+    @foreach (var item in Model)
+    {
+        <div class="items__item">
+            <div class="item__container">
+                <div class="item__image">
+
+                </div>
+                <div class="item__text">
+                    <div class="item__nombre">
+                        <h3 class="item__marca">@Html.DisplayFor(modelItem => item.Nombre)</h3>
+                        <h4 class="item__modelo">@Html.DisplayFor(modelItem => item.Modelo)</h4>
+                    </div>
+                    <span class="item__precio">@Html.DisplayFor(modelItem => item.Precio)€</span>
+                    <a class="item__link" href="http://@Html.DisplayFor(modelItem => item.Tienda.Direccion)">
+                        @Html.DisplayFor(modelItem => item.Tienda.Nombre)
+                    </a>
+                    <div class="item__links">
+                        <a class="boton-normal" asp-action="ListAll" asp-route-id="@item.ID">Similares</a>
+                        <a class="boton-normal" asp-action="Details" asp-route-id="@item.ID">Detalles</a>
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            <a class="boton-normal" asp-action="Edit" asp-route-id="@item.ID">Editar</a>
+                            <a class="boton-normal" asp-action="Delete" asp-route-id="@item.ID">Borrar</a>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<div>
+    <a class="boton-normal boton-margin" asp-controller="Productos" asp-action="Index">Volver a la lista de productos</a>
+</div>

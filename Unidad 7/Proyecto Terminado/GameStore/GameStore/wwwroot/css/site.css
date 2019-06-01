@@ -1,0 +1,166 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+.site-logo{
+    width: 100px;
+}
+
+.items__list {
+    display: flex;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.items__item{
+    margin: 8px;
+    flex-basis: calc(25% - 16px);
+    border: 1px solid #808080;
+    border-radius: 4px;
+}
+
+.item__image{
+    height: 150px;
+    width: 100%;
+    background-color: gray;
+}
+
+.item__text{
+    padding: 20px;
+}
+
+.item__links{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.item__links a{
+    width: calc(50% - 4px);
+    text-align: center;
+    background-color: dodgerblue;
+    padding: 10px;
+    color: white;
+    margin: 2px;
+    border-radius: 3px;
+}
+
+.item__nombre{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.item__precio{
+    font-size: 20px;
+}
+
+.item__link{
+    margin-left: 25px;
+}
+
+.productos__lista{
+    display: flex;
+}
+
+.productos__item {
+    flex-basis: calc(33% - 20px);
+    margin: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    font-size: 25px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: all .2s ease;
+}
+
+.productos__item:hover{
+    transform: scale(1.1);
+
+}
+
+.productos__link {
+    display: block;
+    width: 100%;
+    color: white;
+    padding: 30px 0;
+}
+
+.productos__link:hover{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.boton-normal{
+    background-color: dodgerblue;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.boton-normal:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.image__container img{
+    width: 100%;
+}
