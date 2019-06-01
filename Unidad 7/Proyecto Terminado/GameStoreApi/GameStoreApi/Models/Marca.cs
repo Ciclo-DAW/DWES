@@ -17,7 +17,7 @@ namespace GameStoreApi.Models
 
         [JsonIgnore]
         public List<Periferico> Perifericos { get; set; }
-        [JsonIgnore]
+        //[JsonIgnore]
         public List<Consola> Consolas { get; set; }
     }
 }

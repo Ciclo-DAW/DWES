@@ -10,21 +10,25 @@ namespace GameStore.Models
     {
         public int ID { get; set; }
 
-        [StringLength(50, MinimumLength = 1, ErrorMessage = "Debe introducir el nombre del juego")]
+        [Required(ErrorMessage = "Debe introducir el nombre del juego")]
+        [StringLength(50, MinimumLength = 1)]
         [Display(Name = "Nombre")]
         public string Nombre { get; set; }
 
-        [StringLength(50, MinimumLength = 1, ErrorMessage = "Debe introducir el el modelo de consola del juego")]
+        [Required(ErrorMessage = "Debe introducir el modelo de consola del juego")]
+        [StringLength(50, MinimumLength = 1)]
         [Display(Name = "Modelo de consola")]
         public string Modelo { get; set; }
 
+        [Required(ErrorMessage = "Debe introducir una descripción del juego")]
         [Display(Name = "Descripción")]
         public string Descripcion { get; set; }
 
         [Display(Name = "Cantidad (Opcional)")]
         public int? Cantidad { get; set; }
 
-        [Range(0, 9999.99)]
+        [Required(ErrorMessage = "Debe introducir un precio")]
+        [Range(0, 9999.99, ErrorMessage = "El precio no puede superar 9999.99")]
         [Display(Name = "Precio (€)")]
         public float Precio { get; set; }
 

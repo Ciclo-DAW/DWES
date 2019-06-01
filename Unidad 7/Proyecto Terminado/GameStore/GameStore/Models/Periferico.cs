@@ -14,10 +14,12 @@ namespace GameStore.Models
         public Marca Marca { get; set; }
         public int MarcaId { get; set; }
 
-        [StringLength(50, MinimumLength = 1, ErrorMessage = "Debe introducir el modelo del periférico")]
+        [Required(ErrorMessage = "Debe introducir el modelo del periférico")]
+        [StringLength(50, MinimumLength = 1)]
         [Display(Name = "Modelo")]
         public string Modelo { get; set; }
 
+        [Required(ErrorMessage = "Debe introducir una descripción del periférico")]
         [Display(Name = "Descripción")]
         public string Descripcion { get; set; }
 

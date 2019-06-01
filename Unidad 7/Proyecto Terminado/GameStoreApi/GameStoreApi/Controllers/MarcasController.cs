@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using GameStoreApi.Data;
+using GameStoreApi.DTO;
 using GameStoreApi.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -23,16 +24,64 @@ namespace GameStoreApi.Controllers
         }
         // GET: api/marcas
         [HttpGet]
-        public ActionResult<IEnumerable<Marca>> GetMarcaItems()
+        public ActionResult<IEnumerable<MarcaDto>> GetMarcaItems()
         {
-            return _context.Marca.ToList();
+            return _context.Marca
+                .Select(m => new MarcaDto
+                {
+                    ID = m.ID,
+                    Nombre = m.Nombre,
+                })
+                .ToList();
         }
 
         // GET: api/marcas/5
         [HttpGet("{id}")]
-        public ActionResult<Marca> GetMarcaItem(int id)
+        public ActionResult<MarcaDetailsDto> GetMarcaItem(int id)
         {
-            var marcaItem = _context.Marca.Find(id);
+            var marcaItem = _context.Marca
+                .Where(m => m.ID == id)
+                .Select(m => new MarcaDetailsDto
+                {
+                    ID = m.ID,
+                    Nombre = m.Nombre,
+                    Consolas = m.Consolas.Select(c => new ConsolaDto
+                    {
+                        ID = c.ID,
+                        Marca = new MarcaDto {
+                            ID = c.Marca.ID,
+                            Nombre = c.Marca.Nombre,
+                        },
+                        Modelo = c.Modelo,
+                        Precio = c.Precio,
+                        Tienda = new TiendaDto
+                        {
+                            ID = c.Tienda.ID,
+                            Nombre = c.Tienda.Nombre,
+                            Direccion = c.Tienda.Direccion
+                        }
+                    }).ToList(),
+                    Perifericos = m.Perifericos.Select(p => new PerifericoDto
+                    {
+                        ID = p.ID,
+                        Marca = new MarcaDto
+                        {
+                            ID = p.Marca.ID,
+                            Nombre = p.Marca.Nombre,
+                        },
+                        Modelo = p.Modelo,
+                        Precio = p.Precio,
+                        Tienda = new TiendaDto
+                        {
+                            ID = p.Tienda.ID,
+                            Nombre = p.Tienda.Nombre,
+                            Direccion = p.Tienda.Direccion
+                        }
+                    }).ToList()
+
+                })
+                .FirstOrDefault();
+             
             if (marcaItem == null)
             {
                 return NotFound();

@@ -22,7 +22,11 @@ namespace GameStoreApi.Controllers
             p => new PerifericoDto
             {
                 ID = p.ID,
-                Marca = p.Marca,
+                Marca = new MarcaDto
+                {
+                    ID = p.Marca.ID,
+                    Nombre = p.Marca.Nombre,
+                },
                 Modelo = p.Modelo,
                 Precio = p.Precio,
                 Tienda = new TiendaDto
@@ -80,7 +84,11 @@ namespace GameStoreApi.Controllers
                 .Select(p => new PerifericoDetailsDto
                 {
                     ID = p.ID,
-                    Marca = p.Marca,
+                    Marca = new MarcaDto
+                    {
+                        ID = p.Marca.ID,
+                        Nombre = p.Marca.Nombre,
+                    },
                     Modelo = p.Modelo,
                     Descripcion = p.Descripcion,
                     Cantidad = p.Cantidad,

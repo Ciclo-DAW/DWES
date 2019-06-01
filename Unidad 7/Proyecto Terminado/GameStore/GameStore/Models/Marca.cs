@@ -10,7 +10,8 @@ namespace GameStore.Models
     {
         public int ID { get; set; }
 
-        [StringLength(50, MinimumLength = 1, ErrorMessage = "Debe introducir el nombre de la tienda")]
+        [Required(ErrorMessage = "Debe introducir el nombre de la marca")]
+        [StringLength(50, MinimumLength = 1)]
         [Display(Name = "Nombre")]
         public string Nombre { get; set; }
 

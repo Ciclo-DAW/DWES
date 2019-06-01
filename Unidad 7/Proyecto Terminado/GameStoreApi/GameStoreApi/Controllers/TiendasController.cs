@@ -38,9 +38,84 @@ namespace GameStoreApi.Controllers
 
         // GET: api/tiendas/5
         [HttpGet("{id}")]
-        public ActionResult<Tienda> GetTiendaItem(int id)
+        public ActionResult<TiendaDto> GetTiendaItem(int id)
         {
-            var tiendaItem = _context.Tienda.Find(id);
+            var tiendaItem = _context.Tienda
+                .Where(t => t.ID == id)
+                .Select(t => new TiendaDto         
+                {
+                    ID = t.ID,
+                    Nombre = t.Nombre,
+                    Direccion = t.Direccion
+                })
+                .FirstOrDefault();
+            if (tiendaItem == null)
+            {
+                return NotFound();
+            }
+            return tiendaItem;
+        }
+
+        // GET: api/tiendas/5/details
+        [HttpGet("{id}/details")]
+        public ActionResult<TiendaDetailsDto> GetTiendaDetailsItem(int id)
+        {
+            var tiendaItem = _context.Tienda
+                 .Where(t => t.ID == id)
+                 .Select(t => new TiendaDetailsDto
+                 {
+                     ID = t.ID,
+                     Nombre = t.Nombre,
+                     Direccion = t.Direccion,
+                     Consolas = t.Consolas.Select(c => new ConsolaDto
+                     {
+                         ID = c.ID,
+                         Marca = new MarcaDto
+                         {
+                             ID = c.Marca.ID,
+                             Nombre = c.Marca.Nombre,
+                         },
+                         Modelo = c.Modelo,
+                         Precio = c.Precio,
+                         Tienda = new TiendaDto
+                         {
+                             ID = c.Tienda.ID,
+                             Nombre = c.Tienda.Nombre,
+                             Direccion = c.Tienda.Direccion
+                         }
+                     }).ToList(),
+                     Perifericos = t.Perifericos.Select(p => new PerifericoDto
+                     {
+                         ID = p.ID,
+                         Marca = new MarcaDto
+                         {
+                             ID = p.Marca.ID,
+                             Nombre = p.Marca.Nombre,
+                         },
+                         Modelo = p.Modelo,
+                         Precio = p.Precio,
+                         Tienda = new TiendaDto
+                         {
+                             ID = p.Tienda.ID,
+                             Nombre = p.Tienda.Nombre,
+                             Direccion = p.Tienda.Direccion
+                         }
+                     }).ToList(),
+                     Juegos = t.Juegos.Select(j => new JuegoDto
+                     {
+                         ID = j.ID,
+                         Nombre = j.Nombre,
+                         Modelo = j.Modelo,
+                         Precio = j.Precio,
+                         Tienda = new TiendaDto
+                         {
+                             ID = j.Tienda.ID,
+                             Nombre = j.Tienda.Nombre,
+                             Direccion = j.Tienda.Direccion
+                         }
+                     }).ToList()
+                 })
+                 .FirstOrDefault();
             if (tiendaItem == null)
             {
                 return NotFound();

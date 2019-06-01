@@ -5,7 +5,8 @@ Hola pongo aquí un par de apuntes sobre mi API:
 
 -Ambos proyectos van separados en vez de ir en la misma solución porque descubrí que se podían incluír varios proyectos en la misma solución demasiado tarde.
 
--Cree rutas "details" para algunas de las entidades porque quería probar ese tipo de cosas.
+-Cree rutas "details" para algunas de las entidades en las que se muestra mas informacion que en el endpoint normal y en algunos casos se muestran los datos de
+las entidades relacionadas.
 
 -También cree clases "DTO" orientadas simplemente a ser mostradas por la API para escoger qué datos de cada entidad quiero mostrar, aunque supongo que
 podría haber conseguido lo mismo con ViewModels.
@@ -37,4 +38,4 @@ es en la vista de detalles de los controladores, si no me equivo era en:
 
 Por mas vueltas que le di no conseguí recordar la forma en que me dijiste, y me gustaría saberlo porque me quedé con la duda.
 
-Un saludo, Brais.
+Un saludo y gracias, Brais.

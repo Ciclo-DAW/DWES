@@ -22,7 +22,11 @@ namespace GameStoreApi.Controllers
             c => new ConsolaDto
             {
                 ID = c.ID,
-                Marca = c.Marca,
+                Marca = new MarcaDto
+                {
+                    ID = c.Marca.ID,
+                    Nombre = c.Marca.Nombre,
+                },
                 Modelo = c.Modelo,
                 Precio = c.Precio,
                 Tienda = new TiendaDto
@@ -81,7 +85,11 @@ namespace GameStoreApi.Controllers
                 .Select(c => new ConsolaDetailsDto
                 {
                     ID = c.ID,
-                    Marca = c.Marca,
+                    Marca  = new MarcaDto
+                    {
+                        ID = c.Marca.ID,
+                        Nombre = c.Marca.Nombre,
+                    },
                     Modelo = c.Modelo,
                     Descripcion = c.Descripcion,
                     Cantidad = c.Cantidad,

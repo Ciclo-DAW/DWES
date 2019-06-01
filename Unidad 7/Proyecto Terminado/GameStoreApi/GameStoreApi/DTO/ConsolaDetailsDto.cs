@@ -10,7 +10,7 @@ namespace GameStoreApi.DTO
     {
         public int ID { get; set; }
 
-        public Marca Marca { get; set; }
+        public MarcaDto Marca { get; set; }
         public string Modelo { get; set; }
         public string Descripcion { get; set; }
         public int? Cantidad { get; set; }

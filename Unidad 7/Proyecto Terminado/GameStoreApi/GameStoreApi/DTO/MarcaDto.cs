@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace GameStoreApi.DTO
 {
-    public class ConsolaDto
+    public class MarcaDto
     {
         public int ID { get; set; }
-        public MarcaDto Marca { get; set; }
-        public string Modelo { get; set; }
-        public float Precio { get; set; }
-        public TiendaDto Tienda { get; set; }
+
+     
+        public string Nombre { get; set; }
+
     }
 }
